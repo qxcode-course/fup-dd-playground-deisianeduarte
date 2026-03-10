@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-13-21",
+            "content": "@@ -54,13 +54,14 @@\n ln(%22\n-Deisi\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-15-09",
+            "content": "@@ -54,23 +54,13 @@\n ln(%22\n-primeiro c%C3%B3digo\n+Deisi\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-16-10",
+            "content": "@@ -72,40 +72,6 @@\n o%22)%0A\n-    fmt.Println(%22segundo c%C3%B3digo%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-17-28",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,19 +19,16 @@\n t %22fmt%22%0A\n-%0A%0A%0A\n func mai\n@@ -89,16 +89,21 @@\n ln(%22\n-ol%C3%A1 mund\n+segundo c%C3%B3dig\n o%22)%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-31-48",
+            "content": "@@ -103,20 +103,8 @@\n ndo%22\n-, num1, num2\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-40-31",
+            "content": "@@ -99,12 +99,24 @@\n %C3%A1 mundo%22\n+, num1, num2\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-41-14",
+            "content": "@@ -45,49 +45,37 @@\n     \n-var num1, num2 float64%0A    fmt.Scan(&num1\n+fmt.Println(%22primeiro c%C3%B3digo%22\n )%0A  \n@@ -103,21 +103,8 @@\n ndo%22\n- , num1, num2\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-44-48",
+            "content": "@@ -88,28 +88,8 @@\n m1)%0A\n-    fmt.Scan(&num2)%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-10_17-46-34",
+            "content": "@@ -67,19 +67,8 @@\n at64\n- //variav%C3%A9l\n %0A   \n@@ -87,37 +87,8 @@\n um1)\n- //lendo e escrevendo EM num1\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-52-10",
+            "content": "@@ -78,16 +78,32 @@\n av%C3%A9l%0A   \n+ fmt.Scan(&num1)\n  //lendo\n@@ -141,15 +141,8 @@\n can(\n-&num2, \n &num\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-55-43",
+            "content": "@@ -82,35 +82,8 @@\n %0A   \n-%0A    fmt.Scan(&num2, &num2)\n  //l\n@@ -108,16 +108,43 @@\n EM num1%0A\n+    fmt.Scan(&num2, &num2)%0A\n     fmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-56-01",
+            "content": "@@ -21,16 +21,18 @@\n  %22fmt%22%0A%0A\n+%0A%0A\n func mai\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_18-02-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2 float64 //variav\u00e9l\n   \n    fmt.Scan(&num2, &num2) //lendo e escrevendo EM num1\n    fmt.Println(\"ol\u00e1 mundo\" , num1, num2)\n}\n",
+            "lines": "10"
+        }
+    ]
+}
