@@ -10,42 +10,15 @@ sources:
   target: https://github.com/qxcodefup/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-10 18:09:47'
   quests: null
   tasks: null
 expanded:
-- fup@problemas-matrizes
-- fup@missão-seleção-1
-- sandbox@sandbox:00_rascunhos
-- fup@missão-strings-1
-- fup@problemas-repetição
-- fup@problemas-vetores-2
-- fup@problemas-strings-2
-- fup@missão-seleção-2
-- fup@missão-vetores-3
-- fup@problemas-strings-1
 - fup@campanha-principal
-- sandbox@sandbox
-- fup@jogos-em-modo-texto
-- fup@repositorio-de-problemas
-- fup@problemas-seleção
 - fup@missão-operações
-- fup@missão-dicionários
-- fup@problemas-operações
-- fup@missão-vetores-2
-- fup@missão-strings-2
-- fup@missão-structs
-- fup@projetos
-- fup@problemas-vetores-1
-- fup@missão-repetição-2
-- fup@missão-matrizes
-- fup@missão-repetição-1
-- fup@problemas-recursão
-- fup@missão-recursão
-- fup@missão-vetores-1
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
-  fup@media: '{self:1, guided:1}'
+  fup@resto: '{self:1, rate:100, study:10, guided:1}'
+  fup@media: '{self:1, rate:100, study:5, guided:1}'
 flags:
   painel: 2
   quests: 2
@@ -54,4 +27,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ''
+selected: fup@sobrou

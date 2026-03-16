@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-11-56",
+            "content": "@@ -38,47 +38,8 @@\n  %7B%0A \n-  var a, b float64%0A   fmt.Scan(&a, &b)%0A\n    f\n@@ -53,19 +53,16 @@\n tln(\n-(a + b) / 2\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-15-30",
+            "content": "@@ -89,18 +89,11 @@\n rint\n-f(%22%25.1f%22, \n+ln(\n (a +\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-17-20",
+            "content": "@@ -96,10 +96,8 @@\n %25.1f\n-%5Cn\n %22, (\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-18-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var a, b float64\n   fmt.Scan(&a, &b)\n   fmt.Printf(\"%.1f\\n\", (a + b) / 2)\n}\n",
+            "lines": "7"
+        }
+    ]
+}

@@ -1,5 +1,9 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Deisi")
+    var nome string
+    var idade int
+    fmt.Println("Digite nome e idade")
+    fmt.Scan(&nome, &idade)
+
 }
