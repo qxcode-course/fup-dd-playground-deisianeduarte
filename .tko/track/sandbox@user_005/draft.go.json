@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_00-32-35",
+            "content": "@@ -54,20 +54,14 @@\n ln(%22\n-Ol%C3%A1 meu amor\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_00-32-58",
+            "content": "@@ -41,77 +41,34 @@\n     \n-var sim int%0A    fmt.Println(%22Quer casar comigo?%22)%0A    fmt.Scan(sim)%0A  \n+fmt.Println(%22Ol%C3%A1 meu amor%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_00-39-46",
+            "content": "@@ -88,17 +88,8 @@\n igo?\n- digite 1\n %22)%0A \n@@ -104,65 +104,13 @@\n can(\n-&\n sim)%0A\n-    fmt.Println(%22Que alegria, vamos marcar o dia%22)%0A\n   %0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_00-42-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var sim int\n    fmt.Println(\"Quer casar comigo? digite 1\")\n    fmt.Scan(&sim)\n    fmt.Println(\"Que alegria, vamos marcar o dia\")\n  \n}\n",
+            "lines": "9"
+        }
+    ]
+}
