@@ -17,8 +17,13 @@
         },
         {
             "label": "2026-03-17_00-42-01",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var sim int\n    fmt.Println(\"Quer casar comigo? digite 1\")\n    fmt.Scan(&sim)\n    fmt.Println(\"Que alegria, vamos marcar o dia\")\n  \n}\n",
+            "content": "@@ -1,11 +1,8 @@\n-// \n package \n@@ -1,32 +1,29 @@\n package main%0A\n-// \n import %22fmt%22%0A// \n@@ -11,35 +11,32 @@\n in%0Aimport %22fmt%22%0A\n-// \n func main() %7B%0A//\n@@ -37,524 +37,142 @@\n ) %7B%0A\n-//\n     \n- \n var \n-dia string = %22seg%22%0A//     if dia == %22seg%22 %7C%7C %0A//     fmt.Println(%22Quer casar comigo? digite 1%22)%0A// %7D%0A%0A%0A%0Apackage main%0A// import %22fmt%22%0A// func main() %7B%0A%0A// idade := 17%0A// if idade %3C 12 %7B%0A//     fmt.Println(%22crianca%22)%0A// %7Delse if idade %3C 18 %7B%0A//     fmt.Println(%22teen%22)%0A// %7Delse if idade %3C 65 %7B%0A//     fmt. Println(%22idoso%22)%0A// %7D%0A%0Ajog1 := %22pedra%22%0Ajog2 := %22papel%22%0A%22jog1%22, jog2%0Aif jog1 == jog2 %7B%0A    fmt.Print%C3%A7n(%22empate%22)%0A%7D else if (jog1 == %22pedra%22 && jog2 == %22tesoura%22) %7C%7C%0A          (jog1 == %22papel%22 && jog2 == %0A%0A\n+sim int%0A    fmt.Println(%22Quer casar comigo? digite 1%22)%0A    fmt.Scan(&sim)%0A    fmt.Println(%22Que alegria, vamos marcar o dia%22)%0A  %0A%7D\n %0A\n",
             "lines": "9"
+        },
+        {
+            "label": "2026-03-17_18-00-42",
+            "content": "// package main\n// import \"fmt\"\n// func main() {\n//     var dia string = \"seg\"\n//     if dia == \"seg\" || \n//     fmt.Println(\"Quer casar comigo? digite 1\")\n// }\n\n\n\npackage main\n// import \"fmt\"\n// func main() {\n\n// idade := 17\n// if idade < 12 {\n//     fmt.Println(\"crianca\")\n// }else if idade < 18 {\n//     fmt.Println(\"teen\")\n// }else if idade < 65 {\n//     fmt. Println(\"idoso\")\n// }\n\njog1 := \"pedra\"\njog2 := \"papel\"\n\"jog1\", jog2\nif jog1 == jog2 {\n    fmt.Print\u00e7n(\"empate\")\n} else if (jog1 == \"pedra\" && jog2 == \"tesoura\") ||\n          (jog1 == \"papel\" && jog2 == \n\n\n",
+            "lines": "32"
         }
     ]
 }

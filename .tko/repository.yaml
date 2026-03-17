@@ -13,10 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox:00_rascunhos
 - fup@missão-operações
-- sandbox@sandbox
 - fup@campanha-principal
+- sandbox@sandbox:00_rascunhos
+- sandbox@sandbox
+- fup@projetos
+- fup@jogos-em-modo-texto
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -30,4 +32,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: sandbox@user_005
+selected: fup@projetos
