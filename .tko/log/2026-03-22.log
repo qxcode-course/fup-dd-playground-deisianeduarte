@@ -1,0 +1,6 @@
+2026-03-22 14:29:50, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-22 14:32:58, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:23
+2026-03-22 14:34:44, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-22 14:35:35, SELF, v:1, k:fup@segundos, self:1, rate:100, concept:1
+2026-03-22 14:35:42, MOVE, v:1, k:fup@celsius, mode:DOWN
+2026-03-22 14:36:44, MOVE, v:1, k:fup@celsius, mode:PICK

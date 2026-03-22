@@ -1,0 +1,4 @@
+2026-03-20 13:41:04, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-20 13:41:07, EXEC, v:1, k:fup@segundos, mode:FULL, size:8, fail:COMP
+2026-03-20 13:41:31, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-20 13:42:11, MOVE, v:1, k:fup@segundos, mode:PICK

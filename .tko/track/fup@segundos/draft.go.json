@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-03-17_16-59-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -37,56 +37,8 @@\n ) %7B%0A\n-    var segund float64%0A    fmt.Scan(&segundo )%0A%0A\n     \n@@ -50,13 +50,19 @@\n rintln(%22\n+qxcode\n %22)%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-20_13-41-07",
+            "content": "@@ -45,494 +45,66 @@\n var \n-t, h, m, s, r int%0A    fmt.Scan(&t)%0A    h = t / 3600%0A    r = t %25 3600%0A    m = r / 60%0A    s = r %25 60%0A%0A    fmt.Printf(%22%25d:%25d:%25d%5Cn%22, h, m, s)%0A%0A%7D%0A%0A// tempo em segundos = t%0A// horas = h%0A// resto = r (o que sobra em segundos depois de tirar as hs)%0A// minutos = m%0A// segundos = s%0A%0A// vai entrar um numero em segundos, ai tem que tirar a hora e vai sobrar um valor (r).%0A// Agora tem que tirar os minutos, vai sobrar de novo, %0A// agora o r vai ser os segundos e no final o resultado tem que ser h:m:s\n+segund float64%0A    fmt.Scan(&segundo )%0A%0A    fmt.Println(%22%22)%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-22_14-32-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t, h, m, s, r int\n    fmt.Scan(&t)\n    h = t / 3600\n    r = t % 3600\n    m = r / 60\n    s = r % 60\n\n    fmt.Printf(\"%d:%d:%d\\n\", h, m, s)\n\n}\n\n// tempo em segundos = t\n// horas = h\n// resto = r (o que sobra em segundos depois de tirar as hs)\n// minutos = m\n// segundos = s\n\n// vai entrar um numero em segundos, ai tem que tirar a hora e vai sobrar um valor (r).\n// Agora tem que tirar os minutos, vai sobrar de novo, \n// agora o r vai ser os segundos e no final o resultado tem que ser h:m:s",
+            "lines": "23"
         }
     ]
 }

@@ -22,8 +22,13 @@
         },
         {
             "label": "2026-03-17_18-00-42",
-            "content": "// package main\n// import \"fmt\"\n// func main() {\n//     var dia string = \"seg\"\n//     if dia == \"seg\" || \n//     fmt.Println(\"Quer casar comigo? digite 1\")\n// }\n\n\n\npackage main\n// import \"fmt\"\n// func main() {\n\n// idade := 17\n// if idade < 12 {\n//     fmt.Println(\"crianca\")\n// }else if idade < 18 {\n//     fmt.Println(\"teen\")\n// }else if idade < 65 {\n//     fmt. Println(\"idoso\")\n// }\n\njog1 := \"pedra\"\njog2 := \"papel\"\n\"jog1\", jog2\nif jog1 == jog2 {\n    fmt.Print\u00e7n(\"empate\")\n} else if (jog1 == \"pedra\" && jog2 == \"tesoura\") ||\n          (jog1 == \"papel\" && jog2 == \n\n\n",
+            "content": "@@ -157,16 +157,29 @@\n // %7D%0A%0A%0A%0A\n+package main%0A\n // impor\n@@ -384,60 +384,16 @@\n  %7D%0A%0A\n-%0A%0A%0Apackage main%0Aimport %22fmt%22%0Afunc main() %7B%0A%0A\n jog1 := \n 0%0Ajo\n@@ -388,17 +388,23 @@\n jog1 := \n-0\n+%22pedra%22\n %0Ajog2 :=\n@@ -408,57 +408,51 @@\n  := \n-1%0Ajog3 := 0%0A%0A%09if jog1 == jog2 && jog2 == jog3%7B%0A%09%09\n+%22papel%22%0A%22jog1%22, jog2%0Aif jog1 == jog2 %7B%0A    \n fmt.\n@@ -456,17 +456,17 @@\n mt.Print\n-l\n+%C3%A7\n n(%22empat\n@@ -469,17 +469,16 @@\n mpate%22)%0A\n-%09\n %7D else i\n@@ -483,79 +483,87 @@\n  if \n+(\n jog\n-2\n+1\n  == \n-jog3 %7B%0A%09%09fmt.Println(%22jog2%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22jog3%22)%0A%09%7D\n+%22pedra%22 && jog2 == %22tesoura%22) %7C%7C%0A          (jog1 == %22papel%22 && jog2 == \n %0A%0A\n-%7D\n %0A\n",
             "lines": "32"
+        },
+        {
+            "label": "2026-03-18_15-51-59",
+            "content": "// package main\n// import \"fmt\"\n// func main() {\n//     var dia string = \"seg\"\n//     if dia == \"seg\" || \n//     fmt.Println(\"Quer casar comigo? digite 1\")\n// }\n\n\n\n// import \"fmt\"\n// func main() {\n\n// idade := 17\n// if idade < 12 {\n//     fmt.Println(\"crianca\")\n// }else if idade < 18 {\n//     fmt.Println(\"teen\")\n// }else if idade < 65 {\n//     fmt. Println(\"idoso\")\n// }\n\n\n\n\npackage main\nimport \"fmt\"\nfunc main() {\n\njog1 := 0\njog2 := 1\njog3 := 0\n\n\tif jog1 == jog2 && jog2 == jog3{\n\t\tfmt.Println(\"empate\")\n\t} else if jog2 == jog3 {\n\t\tfmt.Println(\"jog2\")\n\t} else {\n\t\tfmt.Println(\"jog3\")\n\t}\n\n}\n",
+            "lines": "42"
         }
     ]
 }

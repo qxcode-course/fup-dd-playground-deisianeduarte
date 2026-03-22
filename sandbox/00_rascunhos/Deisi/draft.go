@@ -8,7 +8,6 @@
 
 
 
-package main
 // import "fmt"
 // func main() {
 
@@ -21,19 +20,23 @@ package main
 //     fmt. Println("idoso")
 // }
 
-// jog1 := "pedra"
-// jog2 := "papel"
-// "jog1", jog2
-// if jog1 == jog2 {
-//     fmt.Printçn("empate")
-// } else if (jog1 == "pedra" && jog2 == "tesoura") ||
-//           (jog1 == "papel" && jog2 == "pedra") ||
 
 
+
+package main
+import "fmt"
+func main() {
 
 jog1 := 0
 jog2 := 1
 jog3 := 0
-if jog1 == jog2 && jog2 == jog3
 
+	if jog1 == jog2 && jog2 == jog3{
+		fmt.Println("empate")
+	} else if jog2 == jog3 {
+		fmt.Println("jog2")
+	} else {
+		fmt.Println("jog3")
+	}
 
+}
