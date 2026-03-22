@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_16-50-51",
+            "content": "\npackage main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var x1, y1, x2, y2, d float64\n    fmt.Scan(&x1, &y1, &x2, &y2)\n    d = math.Sqrt(math.Pow(x2 - x1, 2) + math.Pow(y2 - y1, 2))\n    fmt.Printf(\"%.2f\\n\", d)\n}\n",
+            "lines": "10"
+        }
+    ]
+}
