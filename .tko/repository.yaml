@@ -13,11 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@missão-operações
 - sandbox@sandbox:00_rascunhos
 - fup@jogos-em-modo-texto
-- fup@missão-operações
-- sandbox@sandbox
 - fup@campanha-principal
+- fup@missão-seleção-1
+- sandbox@sandbox
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -26,6 +27,7 @@ tasks:
   fup@segundos: '{self:1, rate:100, concept:1}'
   fup@celsius: '{self:1, rate:100, concept:1}'
   fup@pintando: '{self:1, rate:100, concept:1}'
+  fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
   quests: 2
@@ -34,4 +36,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bala
+selected: fup@quantos

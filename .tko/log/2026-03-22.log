@@ -14,3 +14,12 @@
 2026-03-22 15:26:21, SELF, v:1, k:fup@pintando, self:1, rate:100, concept:1
 2026-03-22 15:26:46, MOVE, v:1, k:fup@bala, mode:DOWN
 2026-03-22 15:27:12, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-22 15:44:59, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-22 15:48:49, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-22 15:48:53, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-22 15:52:57, MOVE, v:1, k:fup@jokenpo, mode:DOWN
+2026-03-22 15:53:13, MOVE, v:1, k:fup@jokenpo, mode:PICK
+2026-03-22 16:20:23, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:75, size:18
+2026-03-22 16:23:57, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100, size:18
+2026-03-22 16:28:54, MOVE, v:1, k:fup@jokenpo, mode:BACK
+2026-03-22 16:29:17, SELF, v:1, k:fup@jokenpo, self:1, rate:100, concept:1
