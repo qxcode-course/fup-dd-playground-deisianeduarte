@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_16-59-28",
+            "content": "@@ -41,152 +41,35 @@\n     \n-var a, b, d int %0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    d = a - b%0A    if d %3C0 %7B%0A    fmt.Println(%22d * (-1)%22)%0A    %7D else %7B%0A    fmt.Println(%22d%22)%0A    \n+fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n-%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_17-17-27",
+            "content": "@@ -136,16 +136,17 @@\n tln(\n+%22\n d * (-1)\n )%0A  \n@@ -141,16 +141,17 @@\n d * (-1)\n+%22\n )%0A    %7D \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_17-17-55",
+            "content": "@@ -171,17 +171,19 @@\n Println(\n-d\n+%22d%22\n )%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_17-18-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, d int \n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    d = a - b\n    if d <0 {\n    fmt.Println(d * (-1))\n    } else {\n    fmt.Println(d)\n    }\n}",
+            "lines": "13"
+        }
+    ]
+}
