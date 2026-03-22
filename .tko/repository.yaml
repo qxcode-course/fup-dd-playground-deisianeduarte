@@ -25,6 +25,7 @@ tasks:
   fup@sobrou: '{self:1, rate:100, study:50, friend:Keven}'
   fup@segundos: '{self:1, rate:100, concept:1}'
   fup@celsius: '{self:1, rate:100, concept:1}'
+  fup@pintando: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
   quests: 2
@@ -33,4 +34,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@pintando
+selected: fup@bala

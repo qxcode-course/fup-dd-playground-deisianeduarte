@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_15-24-54",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c, p, s, at float64\n    fmt.Scan(&a, &b, &c)\n    p = (a + b + c) / 2\n    s = p * (p - a) * (p - b) * (p - c)\n    at = math.Sqrt(s)\n    fmt.Printf(\"%.2f\\n\", at)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
