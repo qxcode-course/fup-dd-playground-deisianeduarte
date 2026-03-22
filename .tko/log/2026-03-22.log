@@ -33,3 +33,8 @@
 2026-03-22 17:17:27, EXEC, v:1, k:fup@abs, mode:FULL, rate:0, size:13
 2026-03-22 17:17:55, EXEC, v:1, k:fup@abs, mode:FULL, rate:50, size:13
 2026-03-22 17:18:15, EXEC, v:1, k:fup@abs, mode:FULL, rate:100, size:13
+2026-03-22 17:19:35, MOVE, v:1, k:fup@abs, mode:BACK
+2026-03-22 17:19:41, MOVE, v:1, k:fup@max, mode:DOWN
+2026-03-22 17:19:57, MOVE, v:1, k:fup@max, mode:PICK
+2026-03-22 17:23:05, MOVE, v:1, k:fup@max, mode:BACK
+2026-03-22 17:23:25, SELF, v:1, k:fup@abs, self:1, rate:100, concept:1

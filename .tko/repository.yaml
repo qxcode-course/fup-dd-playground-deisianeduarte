@@ -28,6 +28,7 @@ tasks:
   fup@celsius: '{self:1, rate:100, concept:1}'
   fup@pintando: '{self:1, rate:100, concept:1}'
   fup@bala: '{self:1, rate:100, concept:1}'
+  fup@abs: '{self:1, rate:100, concept:1}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
