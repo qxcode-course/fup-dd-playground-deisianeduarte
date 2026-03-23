@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-23_11-48-54",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,14 +37,8 @@\n ) %7B%0A\n-    t%0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-23_16-53-27",
+            "content": "@@ -41,95 +41,41 @@\n     \n-var a, b, soma, subtracao, multiplicacao, divisao int %0A    fmt.Scan(&a)%0A    fmt.Scan(&b\n+t%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-23_17-02-11",
+            "content": "@@ -49,563 +49,87 @@\n a, b\n- int%0A    var operador string%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    fmt.Scan(&operador)%0A%0A    resultado := 0%0A    valid := true%0A%0A    switch operador%7B%0A    case %22+%22:%0A    resultado = a + b %0A    case %22-%22:%0A    resultado = a - b%0A    case %22*%22: %0A    resultado = a * b %0A    case %22/%22:%0A        if b == 0 %7B%0A            fmt.Println(%22ERRO, divisao por zero%22) %0A            valid = false%0A        %7D else %7B%0A            resultado = a / b%0A        %7D%0A    %0A         default:%0A%09%09fmt.Println(%22Opera%C3%A7%C3%A3o inv%C3%A1lida!%22)%0A%09%09valid = false%0A         %7D%0A%0A%09if valid %7B%0A%09%09fmt.Println(resultado)%0A%09%7D%0A    \n+, soma, subtracao, multiplicacao, divisao int %0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-23_17-44-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var operador string\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&operador)\n\n    resultado := 0\n    valid := true\n\n    switch operador{\n    case \"+\":\n    resultado = a + b \n    case \"-\":\n    resultado = a - b\n    case \"*\": \n    resultado = a * b \n    case \"/\":\n        if b == 0 {\n            fmt.Println(\"ERRO, divisao por zero\") \n            valid = false\n        } else {\n            resultado = a / b\n        }\n    \n         default:\n\t\tfmt.Println(\"Opera\u00e7\u00e3o inv\u00e1lida!\")\n\t\tvalid = false\n         }\n\n\tif valid {\n\t\tfmt.Println(resultado)\n\t}\n    }\n",
+            "lines": "36"
         }
     ]
 }

@@ -15,11 +15,11 @@ sources:
 expanded:
 - fup@campanha-principal
 - fup@repositorio-de-problemas
-- fup@missão-operações
-- sandbox@sandbox
-- fup@jogos-em-modo-texto
-- fup@problemas-operações
 - sandbox@sandbox:00_rascunhos
+- sandbox@sandbox
+- fup@missão-operações
+- fup@problemas-operações
+- fup@jogos-em-modo-texto
 - fup@missão-seleção-1
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
@@ -35,6 +35,7 @@ tasks:
   fup@ou: '{self:1, rate:100}'
   fup@positivo: '{self:1, rate:100}'
   fup@multiplo: '{self:1, rate:100}'
+  fup@calc: '{self:1, rate:100, concept:1}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
@@ -44,4 +45,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@quebrada
+selected: fup@guarda
