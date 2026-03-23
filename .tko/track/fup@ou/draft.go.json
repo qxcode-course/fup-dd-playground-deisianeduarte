@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_11-02-16",
+            "content": "@@ -41,133 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A    if a == 3 %7C%7C a == 5 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_11-17-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n    if a == 3 || a == 5 {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "lines": "12"
+        }
+    ]
+}

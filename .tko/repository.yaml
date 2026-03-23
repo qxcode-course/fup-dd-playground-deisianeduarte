@@ -13,12 +13,14 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
-- sandbox@sandbox:00_rascunhos
-- fup@jogos-em-modo-texto
 - fup@campanha-principal
-- fup@missão-seleção-1
+- fup@repositorio-de-problemas
+- fup@missão-operações
 - sandbox@sandbox
+- fup@jogos-em-modo-texto
+- fup@problemas-operações
+- sandbox@sandbox:00_rascunhos
+- fup@missão-seleção-1
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -29,6 +31,10 @@ tasks:
   fup@pintando: '{self:1, rate:100, concept:1}'
   fup@bala: '{self:1, rate:100, concept:1}'
   fup@abs: '{self:1, rate:100, concept:1}'
+  fup@max: '{self:1, rate:100}'
+  fup@ou: '{self:1, rate:100}'
+  fup@positivo: '{self:1, rate:100}'
+  fup@multiplo: '{self:1, rate:100}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
@@ -38,4 +44,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@abs
+selected: fup@quebrada
