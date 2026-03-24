@@ -13,14 +13,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@campanha-principal
-- fup@repositorio-de-problemas
+- '@fup@selecao-2-if_else-if2-if1_sem_quest'
 - sandbox@sandbox:00_rascunhos
+- '@fup@selecao-1-if_else-if1-base_sem_quest'
 - sandbox@sandbox
-- fup@missão-operações
-- fup@problemas-operações
-- fup@jogos-em-modo-texto
-- fup@missão-seleção-1
+- fup@selecao-1-if_else-if1-base
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -36,6 +33,7 @@ tasks:
   fup@positivo: '{self:1, rate:100}'
   fup@multiplo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100, concept:1}'
+  fup@guarda: '{self:1, rate:100}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   painel: 2
@@ -45,4 +43,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@guarda
+selected: fup@quantos
