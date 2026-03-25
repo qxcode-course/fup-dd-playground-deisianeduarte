@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-03-24_17-00-31",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n    if a == b || b == c || a == c {\n    fmt.Println(\"\")\n    }\n}\n",
+            "content": "@@ -46,17 +46,14 @@\n ar a\n-1\n , \n-a2, a3\n+b, c\n  int\n@@ -68,17 +68,16 @@\n .Scan(&a\n-1\n )%0A    fm\n@@ -84,18 +84,17 @@\n t.Scan(&\n-a2\n+b\n )%0A    fm\n@@ -105,109 +105,51 @@\n an(&\n-a3)%0Aif a1 == a2 && a2 == a3 && a1== a3 %7B%0Afmt.Println(3)%0A%7D else\n+c)%0A   \n  if a\n-1\n  == \n-a2\n+b\n  %7C%7C \n-a2\n+b\n  == \n-a3\n+c\n  %7C%7C a\n-1\n  == \n-a3\n+c\n  %7B%0A\n+    \n fmt.\n@@ -160,34 +160,16 @@\n tln(\n-2)%0A%7D else %7B%0Afmt.Println(0)\n+%22%22)%0A    %7D\n %0A%7D%0A\n-%7D\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-03-24_19-58-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a1, a2, a3 int\n    fmt.Scan(&a1)\n    fmt.Scan(&a2)\n    fmt.Scan(&a3)\nif a1 == a2 && a2 == a3 && a1== a3 {\nfmt.Println(3)\n} else if a1 == a2 || a2 == a3 || a1 == a3 {\nfmt.Println(2)\n} else {\nfmt.Println(0)\n}\n}",
+            "lines": "15"
         }
     ]
 }

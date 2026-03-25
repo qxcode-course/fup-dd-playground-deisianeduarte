@@ -13,11 +13,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- '@fup@selecao-2-if_else-if2-if1_sem_quest'
-- sandbox@sandbox:00_rascunhos
-- '@fup@selecao-1-if_else-if1-base_sem_quest'
-- sandbox@sandbox
-- fup@selecao-1-if_else-if1-base
+- fup@if1
+- fup@if_extra
+- sandbox@00_rascunhos
+- fup@str_extra
+- fup@base
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -36,9 +36,9 @@ tasks:
   fup@guarda: '{self:1, rate:100}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
-  painel: 2
-  quests: 2
-  tracks: 2
+  panel: 3
+  inbox: 1
+  show_panel: 1
   tasks: 0
   task_graph_mode: 0
   show_time: 0
