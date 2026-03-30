@@ -1,0 +1,14 @@
+2026-03-30 17:04:16, MOVE, v:1, k:fup@quebrada, mode:PICK
+2026-03-30 17:04:19, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0
+2026-03-30 17:31:04, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0
+2026-03-30 17:31:08, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0
+2026-03-30 17:31:36, MOVE, v:1, k:fup@quebrada, mode:BACK
+2026-03-30 17:31:47, MOVE, v:1, k:fup@round, mode:PICK
+2026-03-30 17:31:48, EXEC, v:1, k:fup@round, mode:FULL, rate:8, size:52
+2026-03-30 17:31:49, EXEC, v:1, k:fup@round, mode:FULL, rate:8
+2026-03-30 17:32:19, MOVE, v:1, k:fup@round, mode:BACK
+2026-03-30 17:32:28, MOVE, v:1, k:fup@impar, mode:PICK
+2026-03-30 17:32:29, EXEC, v:1, k:fup@impar, mode:FULL, size:6, fail:COMP
+2026-03-30 18:17:39, EXEC, v:1, k:fup@impar, mode:FULL, size:28, fail:COMP
+2026-03-30 18:20:13, EXEC, v:1, k:fup@impar, mode:FULL, fail:COMP
+2026-03-30 18:21:05, MOVE, v:1, k:fup@impar, mode:BACK

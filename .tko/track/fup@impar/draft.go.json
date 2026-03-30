@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-03-24_13-22-42",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,17 +37,8 @@\n ) %7B%0A\n-    var %0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-32-29",
+            "content": "@@ -45,423 +45,40 @@\n var \n-p, d1, d2 int64%0A    fmt.Scan(&p)%0A    fmt.Scan(&d1)%0A    fmt.Scan(d2)%0A    soma := d1 + d2%0A    // se a soma for par%0A    if soma%252 == 0 %7B%0A    if p == 0 %7B%0A        fmt.Println(0)%0A        %7D//a Alice ganha%0A    %7D else%7B%0A        //se a soma for %C3%ADmpar%0A        fmt.Println(1)%0A        //o Bob ganha %0A%0A    %7D else %7B%0A        if p == 0 %7B%0A            fmt.Println(1)%0A        %7D else %7B%0A            fmt.Println(0)%0A        %7D%0A    %7D%0A    %0A    \n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-30_18-17-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2 int64\n    fmt.Scan(&p)\n    fmt.Scan(&d1)\n    fmt.Scan(d2)\n    soma := d1 + d2\n    // se a soma for par\n    if soma%2 == 0 {\n    if p == 0 {\n        fmt.Println(0)\n        }//a Alice ganha\n    } else{\n        //se a soma for \u00edmpar\n        fmt.Println(1)\n        //o Bob ganha \n\n    } else {\n        if p == 0 {\n            fmt.Println(1)\n        } else {\n            fmt.Println(0)\n        }\n    }\n    \n    \n}\n",
+            "lines": "28"
         }
     ]
 }
