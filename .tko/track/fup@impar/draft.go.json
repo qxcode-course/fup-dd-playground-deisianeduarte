@@ -12,7 +12,37 @@
         },
         {
             "label": "2026-03-30_18-17-39",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2 int64\n    fmt.Scan(&p)\n    fmt.Scan(&d1)\n    fmt.Scan(d2)\n    soma := d1 + d2\n    // se a soma for par\n    if soma%2 == 0 {\n    if p == 0 {\n        fmt.Println(0)\n        }//a Alice ganha\n    } else{\n        //se a soma for \u00edmpar\n        fmt.Println(1)\n        //o Bob ganha \n\n    } else {\n        if p == 0 {\n            fmt.Println(1)\n        } else {\n            fmt.Println(0)\n        }\n    }\n    \n    \n}\n",
+            "content": "@@ -357,17 +357,17 @@\n if p == \n-1\n+0\n  %7B%0A     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-31_00-04-54",
+            "content": "@@ -331,19 +331,16 @@\n ha %0A%0A   \n- //\n  %7D else \n@@ -345,23 +345,20 @@\n e %7B%0A    \n-//\n     \n- \n if p == \n@@ -360,27 +360,24 @@\n p == 1 %7B%0A   \n- //\n          fmt\n@@ -387,27 +387,24 @@\n intln(1)%0A   \n- //\n      %7D else \n@@ -404,27 +404,24 @@\n %7D else %7B%0A   \n- //\n          fmt\n@@ -435,19 +435,16 @@\n n(0)%0A   \n- //\n      %7D%0A \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-31_00-08-15",
+            "content": "@@ -109,13 +109,12 @@\n can(\n-&\n d2)%0A\n+\n     \n@@ -174,17 +174,16 @@\n 2 == 0 %7B\n- \n %0A    if \n@@ -328,22 +328,153 @@\n ganha %0A%0A\n+    // %7D else %7B%0A    //     if p == 1 %7B%0A    //         fmt.Println(1)%0A    //     %7D else %7B%0A    //         fmt.Println(0)%0A    //     %7D%0A\n     %7D\n- \n %0A    %0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-31_00-18-06",
+            "content": "@@ -130,21 +130,16 @@\n d1 + d2%0A\n-    %0A\n     // s\n@@ -155,17 +155,16 @@\n for par%0A\n-%0A\n     if s\n@@ -170,26 +170,33 @@\n soma%252 == 0 \n-&&\n+%7B %0A    if\n  p == 0 %7B%0A  \n@@ -229,26 +229,8 @@\n    %7D\n-%0A        %0A        \n //a \n@@ -249,64 +249,91 @@\n     \n-  %0A    if soma%252 == 0 && p == 1 %7B%0A        fmt.Println(1)\n+%7D else%7B%0A        //se a soma for %C3%ADmpar%0A        fmt.Println(1)%0A        //o Bob ganha \n %0A%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_00-30-42",
+            "content": "@@ -54,14 +54,8 @@\n , d2\n-, soma\n  int\n@@ -119,16 +119,17 @@\n    soma \n+:\n = d1 + d\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_00-31-35",
+            "content": "@@ -50,16 +50,22 @@\n , d1, d2\n+, soma\n  int64%0A \n@@ -129,9 +129,8 @@\n oma \n-:\n = d1\n@@ -340,130 +340,12 @@\n     \n-if soma%252 != 0 && p == 0 %7B%0A        fmt.Println(1)%0A        %7D%0A    if soma%252 != 0 && p == 1 %7B%0A        fmt.Println(0)%0A        %7D\n+%0A    \n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_00-39-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2 int64\n    fmt.Scan(&p)\n    fmt.Scan(&d1)\n    fmt.Scan(&d2)\n    soma := d1 + d2\n    \n    // se a soma for par\n\n    if soma%2 == 0 && p == 0 {\n        fmt.Println(0)\n        }\n        \n        //a Alice ganha\n      \n    if soma%2 == 0 && p == 1 {\n        fmt.Println(1)\n\n    } \n    if soma%2 != 0 && p == 0 {\n        fmt.Println(1)\n        }\n    if soma%2 != 0 && p == 1 {\n        fmt.Println(0)\n        }\n}\n",
             "lines": "28"
         }
     ]
