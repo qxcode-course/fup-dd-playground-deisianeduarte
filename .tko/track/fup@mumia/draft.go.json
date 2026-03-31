@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_00-49-49",
+            "content": "@@ -41,455 +41,35 @@\n     \n-var nome  string%0A    var idade int%0A    fmt.Scan(&nome)%0A    fmt.Scan(&idade) %0A    if idade %3C= 12 %7B%0A    fmt.Printf(%22%25s eh crianca %5Cn%22, nome)%0A    %7D%0A    if idade %3C= 18  && idade %3E 12 %7B%0A    fmt.Printf(%22%25s eh jovem %5Cn%22, nome)%0A    %7D%0A    if idade %3C= 65 && idade %3E 18 %7B%0A    fmt.Printf(%22%25s eh adulto %5Cn%22, nome)%0A    %7D%0A    if idade %3C= 1000  && idade %3E 65%7B%0A        fmt.Printf(%22%25s eh idoso %5Cn%22, nome)%0A    %7D else %7B%0A        fmt.Printf(%22%25s eh mumia %5Cn%22, nome)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_01-13-58",
+            "content": "@@ -128,22 +128,23 @@\n  idade %3C\n+=\n  12 %7B%0A\n-\n     fmt.\n@@ -196,16 +196,17 @@\n  idade %3C\n+=\n  18  && \n@@ -212,17 +212,16 @@\n  idade %3E\n-=\n  12 %7B%0A  \n@@ -277,16 +277,17 @@\n  idade %3C\n+=\n  65 && i\n@@ -292,17 +292,16 @@\n  idade %3E\n-=\n  18 %7B%0A  \n@@ -358,16 +358,17 @@\n  idade %3C\n+=\n  1000  &\n@@ -376,21 +376,19 @@\n  idade %3E\n-=\n  65\n- \n %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_01-16-10",
+            "content": "@@ -163,16 +163,17 @@\n  crianca\n+ \n %5Cn%22, nom\n@@ -167,32 +167,32 @@\n anca %5Cn%22, nome)%0A\n-\n     %7D%0A    if ida\n@@ -244,16 +244,17 @@\n eh jovem\n+ \n %5Cn%22, nom\n@@ -325,16 +325,17 @@\n h adulto\n+ \n %5Cn%22, nom\n@@ -412,16 +412,17 @@\n eh idoso\n+ \n %5Cn%22, nom\n@@ -433,29 +433,13 @@\n    %7D\n-%0A    if idade %3E= 1000\n+ else\n  %7B%0A \n@@ -468,16 +468,17 @@\n eh mumia\n+ \n %5Cn%22, nom\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_01-20-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome  string\n    var idade int\n    fmt.Scan(&nome)\n    fmt.Scan(&idade) \n    if idade < 12 {\n    fmt.Printf(\"%s eh crianca\\n\", nome)\n    }\n    if idade < 18  && idade >= 12 {\n    fmt.Printf(\"%s eh jovem\\n\", nome)\n    }\n    if idade < 65 && idade >= 18 {\n    fmt.Printf(\"%s eh adulto\\n\", nome)\n    }\n    if idade < 1000  && idade >= 65 {\n        fmt.Printf(\"%s eh idoso\\n\", nome)\n    }\n    if idade >= 1000 {\n        fmt.Printf(\"%s eh mumia\\n\", nome)\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

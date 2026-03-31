@@ -17,6 +17,7 @@ expanded:
 - sandbox@00_rascunhos
 - fup@base
 - fup@if1
+- fup@if2
 - fup@if_extra
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
@@ -35,7 +36,9 @@ tasks:
   fup@calc: '{self:1, rate:100, concept:1}'
   fup@guarda: '{self:1, rate:100}'
   fup@quantos: '{self:1, rate:100, concept:1}'
+  fup@impar: '{self:1, rate:100, concept:1}'
   fup@round: '{rate:8}'
+  fup@mumia: '{self:1, rate:100, concept:1}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
 flags:
   panel: 3
@@ -44,4 +47,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@impar
+selected: fup@meio
