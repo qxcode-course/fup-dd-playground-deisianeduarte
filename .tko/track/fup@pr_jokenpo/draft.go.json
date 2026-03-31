@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-03-24_17-32-22",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,245 +23,53 @@\n mt%22%0A\n-// 0 pedra%0A// 1 papel %0A// 2 tesoura%0A// variavel constante valores que nao mudam (palavras com letras maiusculas)%0Afunc main() %7B%0A    const PEDRA = 0%0A    const PAPEL = 1%0A    const TESOURA = 2 %0A    valor := rand.Int (5)%0A    fmt.Println(valor\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-31_18-03-52",
+            "content": "package main\nimport \"fmt\"\n// 0 pedra\n// 1 papel \n// 2 tesoura\n// variavel constante valores que nao mudam (palavras com letras maiusculas)\nfunc main() {\n    const PEDRA = 0\n    const PAPEL = 1\n    const TESOURA = 2 \n    valor := rand.Int (5)\n    fmt.Println(valor)\n}\n",
+            "lines": "13"
         }
     ]
 }
