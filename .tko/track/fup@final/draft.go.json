@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-25-30",
+            "content": "@@ -188,36 +188,25 @@\n vado%22)%0A    %7D\n- else %7B%0A    \n+%0A\n     if media\n@@ -249,18 +249,8 @@\n o%22)%0A\n-        %7D%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-29-44",
+            "content": "@@ -192,21 +192,32 @@\n %22)%0A    %7D\n-%0A\n+ else %7B%0A \n     \n+   \n if media\n@@ -223,16 +223,20 @@\n a %3C 4 %7B%0A\n+    \n     fmt.\n@@ -256,29 +256,35 @@\n ovado%22)%0A\n-%0A    %7D else %7B\n+        %7D%0A    %7D%0A   \n  mf := n\n@@ -421,9 +421,8 @@\n     %7D%0A%7D%0A\n-%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-34-11",
+            "content": "@@ -139,35 +139,8 @@\n / 2%0A\n-    mf := n1 + n2 + nf / 3%0A\n     \n@@ -155,16 +155,16 @@\n  %3E= 7 %7B%0A\n+\n         \n@@ -188,29 +188,28 @@\n vado%22)%0A    %7D\n- else\n+%0A   \n  if media %3C \n@@ -237,24 +237,25 @@\n reprovado%22)%0A\n+%0A\n     %7D else i\n@@ -253,16 +253,46 @@\n  %7D else \n+%7B mf := n1 + n2 + nf / 3 %0A    \n if mf %3E=\n@@ -400,8 +400,9 @@\n     %7D%0A%7D%0A\n+%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-40-52",
+            "content": "@@ -127,17 +127,15 @@\n  := \n-(\n n1 + n2\n-)\n  / 2\n@@ -145,17 +145,16 @@\n   mf := \n-(\n n1 + n2 \n@@ -157,17 +157,16 @@\n  n2 + nf\n-)\n  / 3%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-42-13",
+            "content": "@@ -290,35 +290,8 @@\n e if\n- media %3E= 4 && media %3C 7 &&\n  mf \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-46-09",
+            "content": "@@ -294,16 +294,17 @@\n  media %3E\n+=\n  4 && me\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-47-00",
+            "content": "@@ -244,20 +244,16 @@\n a %3C 4 %7B%0A\n-    \n     fmt.\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-47-57",
+            "content": "@@ -110,17 +110,16 @@\n an(&nf)%0A\n-%0A\n     medi\n@@ -152,22 +152,25 @@\n := (\n-media+\n+n1 + n2 + \n nf) / \n-2%0A\n+3\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_17-49-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, nf int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&nf)\n\n    media := (n1 + n2) / 2\n    mf := (media+nf) / 2\n\n    if media >= 7 {\n        fmt.Println(\"aprovado\")\n    } else if media < 4 {\n        fmt.Println(\"reprovado\")\n    } else if media > 4 && media < 7 && mf >= 5 {\n        fmt.Println(\"aprovado na final\")\n    } else {\n        fmt.Println(\"reprovado na final\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}
