@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_12-48-19",
+            "content": "@@ -10,27 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A\n func\n@@ -41,309 +41,35 @@\n     \n-var dia, hora int%0A    fmt.Scan(&dia)%0A    fmt.Scan(&hora)%0A%0A    if dia == 1 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D else if dia %3E= 2 && dia %3C7 && hora %3E=8 && hora %3C= 11 %7C%7C hora %3E= 14 && hora %3C=17 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if dia == 7 && hora %3E= 8 && hora %3C= 11 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-01_13-16-11",
+            "content": "@@ -344,48 +344,8 @@\n M%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-01_13-17-23",
+            "content": "@@ -177,17 +177,16 @@\n && dia %3C\n- \n 7 && hor\n@@ -181,33 +181,32 @@\n ia %3C7 && hora %3E=\n- \n 8 && hora %3C= 11 \n@@ -229,17 +229,16 @@\n  hora %3C=\n- \n 17 %7B%0A   \n@@ -355,34 +355,8 @@\n lse \n-if  dia == 7 && hora %3E 11 \n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-01_13-19-20",
+            "content": "@@ -413,48 +413,8 @@\n O%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-01_13-20-14",
+            "content": "@@ -180,12 +180,11 @@\n dia \n-== 6\n+%3C 7\n  && \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-01_13-21-07",
+            "content": "@@ -180,11 +180,12 @@\n dia \n-%3C 7\n+== 6\n  && \n@@ -271,20 +271,20 @@\n )%0A    %7D \n-%0A   \n+else\n  if dia \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-01_13-21-51",
+            "content": "@@ -147,28 +147,29 @@\n %22NAO%22)%0A    %7D\n-%0A   \n+ else\n  if dia %3E= 2\n@@ -348,20 +348,21 @@\n %22)%0A    %7D\n-%0A   \n+ else\n  if  dia\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-01_13-22-11",
+            "content": "@@ -413,11 +413,50 @@\n )%0A    %7D \n+else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-01_13-22-28",
+            "content": "@@ -143,37 +143,36 @@\n tln(%22NAO%22)%0A    %7D\n- else\n+%0A   \n  if dia %3E= 2 && \n@@ -265,28 +265,28 @@\n SIM%22)%0A    %7D \n-else\n+%0A   \n  if dia == 7\n@@ -347,21 +347,20 @@\n %22)%0A    %7D\n- else\n+%0A   \n  if  dia\n@@ -417,46 +417,7 @@\n   %7D \n-else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-01_13-23-23",
+            "content": "@@ -335,32 +335,98 @@\n .Println(%22SIM%22)%0A\n+    %7D else if  dia == 7 && hora %3E 11 %7B%0A        fmt.Println(%22NAO%22)%0A\n     %7D else %7B%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-01_13-24-59",
+            "content": "@@ -101,20 +101,71 @@\n &hora)%0A%0A\n-%0A\n    \n+ if dia == 1 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D else\n  if dia \n@@ -395,77 +395,4 @@\n %7D%0A%7D%0A\n-%0A%0A%0A// else if  dia == 7 && hora %3E 11 %7B%0A //       fmt.Println(%22NAO%22)%0A    %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-01_13-26-22",
+            "content": "@@ -301,17 +301,16 @@\n    %7D\n- \n  else %7B%0A\n     \n@@ -305,16 +305,16 @@\n  else %7B%0A\n+\n         \n@@ -332,16 +332,22 @@\n (%22NAO%22)%0A\n+    %7D%0A\n %7D%0A%0A%0A%0A// \n@@ -417,47 +417,4 @@\n    %0A\n-// %7D else if %7B%0A  //      fmt.Println(%22NAO%22)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-01_13-27-42",
+            "content": "@@ -337,14 +337,8 @@\n O%22)%0A\n-    %7D%0A\n %7D%0A%0A%0A\n@@ -455,18 +455,4 @@\n AO%22)\n-%0A  //dia == 1 \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_13-28-06",
+            "content": "@@ -110,61 +110,8 @@\n     \n- if dia == 1 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D else \n if d\n@@ -298,16 +298,56 @@\n )%0A    %7D \n+ else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n %0A%7D%0A%0A%0A%0A//\n@@ -458,13 +458,21 @@\n (%22NAO%22)%0A  //\n+dia == 1\n  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-01_13-29-18",
+            "content": "@@ -101,16 +101,17 @@\n &hora)%0A%0A\n+%0A\n      if \n@@ -209,18 +209,18 @@\n a %3C= 11 \n-&&\n+%7C%7C\n  hora %3E=\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-01_13-30-29",
+            "content": "@@ -351,23 +351,33 @@\n %0A    %7D %0A\n-   \n+%7D%0A%0A%0A%0A// else\n  if \n+ \n dia == 7\n@@ -389,24 +389,26 @@\n ora %3E 11 %7B%0A \n+//\n        fmt.P\n@@ -425,32 +425,8 @@\n O%22)%0A\n-    %7D%0A%7D%0A%0A%0A%0A// else if  %0A\n     \n@@ -450,28 +450,33 @@\n  //      fmt.Println(%22NAO%22)%0A\n+  // \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-01_13-32-07",
+            "content": "@@ -212,10 +212,10 @@\n  11 \n-%7C%7C\n+&&\n  hor\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-01_13-32-17",
+            "content": "@@ -418,18 +418,51 @@\n    %7D\n- else\n+%0A%7D%0A%0A%0A%0A// else if  %0A    %0A// %7D else if\n  %7B%0A  \n+//\n     \n@@ -486,39 +486,4 @@\n O%22)%0A\n-    %7D%0A%7D%0A%0A%0A%0A// else if  %0A    %0A// %7D %0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-01_13-32-54",
+            "content": "@@ -342,36 +342,36 @@\n ln(%22SIM%22)%0A    %7D \n-else\n+%0A   \n  if dia == 7 && \n@@ -456,8 +456,36 @@\n %0A    %7D%0A%7D\n+%0A%0A%0A%0A// else if  %0A    %0A// %7D %0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-01_13-33-24",
+            "content": "@@ -212,74 +212,10 @@\n  11 \n-%7B%0A        fmt.Println(%22SIM%22) %0A    %7D else if dia %3E= 2 && dia %3C 7 &&\n+%7C%7C\n  hor\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-01_13-38-18",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    var dia, hora int\n    fmt.Scan(&dia)\n    fmt.Scan(&hora)\n\n     if dia == 1 {\n        fmt.Println(\"NAO\")\n    } else if dia >= 2 && dia < 7 && hora >= 8 && hora <= 11 {\n        fmt.Println(\"SIM\") \n    } else if dia >= 2 && dia < 7 && hora >= 14 && hora <= 17 {\n        fmt.Println(\"SIM\")\n    } else if dia == 7 && hora >= 8 && hora <= 11 {\n        fmt.Println(\"SIM\")\n    } else if dia == 7 && hora > 11 {\n        fmt.Println(\"NAO\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}",
+            "lines": "24"
+        }
+    ]
+}

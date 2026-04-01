@@ -1,0 +1,25 @@
+2026-04-01 12:48:14, MOVE, v:1, k:fup@semana, mode:DOWN
+2026-04-01 12:48:15, MOVE, v:1, k:fup@semana, mode:PICK
+2026-04-01 12:48:19, EXEC, v:1, k:fup@semana, mode:FULL, rate:0, size:5
+2026-04-01 13:16:11, EXEC, v:1, k:fup@semana, mode:FULL, rate:52, size:18
+2026-04-01 13:17:23, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:20
+2026-04-01 13:19:20, EXEC, v:1, k:fup@semana, mode:FULL, rate:57, size:20
+2026-04-01 13:20:14, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:22
+2026-04-01 13:21:07, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:22
+2026-04-01 13:21:51, EXEC, v:1, k:fup@semana, mode:FULL, rate:52, size:23
+2026-04-01 13:22:11, EXEC, v:1, k:fup@semana, mode:FULL, rate:42, size:25
+2026-04-01 13:22:28, EXEC, v:1, k:fup@semana, mode:FULL, rate:52, size:23
+2026-04-01 13:23:23, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:22
+2026-04-01 13:24:59, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:20
+2026-04-01 13:26:22, EXEC, v:1, k:fup@semana, mode:FULL, rate:89, size:25
+2026-04-01 13:27:42, EXEC, v:1, k:fup@semana, mode:FULL, size:26, fail:COMP
+2026-04-01 13:28:06, EXEC, v:1, k:fup@semana, mode:FULL, rate:89, size:28
+2026-04-01 13:29:18, EXEC, v:1, k:fup@semana, mode:FULL, rate:52, size:28
+2026-04-01 13:30:29, EXEC, v:1, k:fup@semana, mode:FULL, rate:21, size:27
+2026-04-01 13:32:07, EXEC, v:1, k:fup@semana, mode:FULL, rate:31, size:28
+2026-04-01 13:32:17, EXEC, v:1, k:fup@semana, mode:FULL, rate:57, size:28
+2026-04-01 13:32:54, EXEC, v:1, k:fup@semana, mode:FULL, rate:42, size:29
+2026-04-01 13:33:24, EXEC, v:1, k:fup@semana, mode:FULL, rate:94, size:22
+2026-04-01 13:38:18, EXEC, v:1, k:fup@semana, mode:FULL, rate:100, size:24
+2026-04-01 13:38:55, MOVE, v:1, k:fup@semana, mode:BACK
+2026-04-01 13:40:12, SELF, v:1, k:fup@semana, self:1, rate:100, concept:1

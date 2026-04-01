@@ -15,11 +15,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@base
-- fup@str_extra
 - fup@if1
 - fup@if_extra
-- fup@games
+- fup@str_extra
+- fup@if2
+- fup@base
 tasks:
   fup@tres: '{self:1, rate:100, study:4, guided:1}'
   fup@resto: '{self:1, rate:100, study:10, guided:1}'
@@ -43,12 +43,12 @@ tasks:
   fup@meio: '{self:1, rate:100, concept:1}'
   fup@jokenpo: '{self:1, rate:100, concept:1}'
   fup@final: '{self:1, rate:100}'
+  fup@semana: '{self:1, rate:100, concept:1}'
   fup@quebrada: '{}'
   fup@operacoes: '{}'
   fup@data: '{}'
   fup@opala: '{}'
   fup@tv: '{}'
-  fup@semana: '{}'
   fup@varetas: '{}'
   fup@bhaskara: '{}'
   fup@cortada: '{}'
@@ -252,4 +252,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@pr_jokenpo
+selected: fup@semana

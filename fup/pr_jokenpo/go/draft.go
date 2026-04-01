@@ -7,7 +7,6 @@ func main() {
     const TESOURA int = 2 
     
     var jog1, jog2  int
-    var vit1, vit2
 
     fmt.Println("jog1:digite 0(pedra), 1(papel), 2(tesoura)")
     fmt.Scan(&jog1)
