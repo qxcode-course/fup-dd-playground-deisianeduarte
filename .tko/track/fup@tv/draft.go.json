@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-02-46",
+            "content": "@@ -41,209 +41,35 @@\n     \n-var valor float64%0A    var parcelas float64%0A    fmt.Scan(&valor, &parcelas)%0A    valor *= (1 + 0.05*(parcelas-1))%0A    cada := valor / parcelas%0A    fmt.Printf(%22%25.2f%22, cada)%0A    fmt.Printf(%22%25.2f%22, parcelas\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-14-49",
+            "content": "@@ -224,11 +224,18 @@\n rint\n-ln(\n+f(%22%25.2f%22, \n parc\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-15-06",
+            "content": "@@ -196,17 +196,17 @@\n intf(%22%25.\n-1\n+2\n f%22, cada\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-15-42",
+            "content": "@@ -200,9 +200,9 @@\n (%22%25.\n-2\n+1\n f%22, \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-15-54",
+            "content": "@@ -202,10 +202,8 @@\n %25.2f\n-/n\n %22, c\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-16-07",
+            "content": "@@ -202,9 +202,9 @@\n %25.2f\n-%5C\n+/\n n%22, \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-16-27",
+            "content": "@@ -198,16 +198,18 @@\n tf(%22%25.2f\n+%5Cn\n %22, cada)\n@@ -226,18 +226,11 @@\n rint\n-f(%22%25.2f%22, \n+ln(\n parc\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-17-01",
+            "content": "@@ -231,10 +231,8 @@\n %25.2f\n-%5Cn\n %22, p\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-17-11",
+            "content": "@@ -201,24 +201,20 @@\n %22%25.2f%22, \n-parcelas\n+cada\n )%0A    fm\n@@ -232,16 +232,20 @@\n .2f%5Cn%22, \n-cada\n+parcelas\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-19-19",
+            "content": "@@ -198,18 +198,16 @@\n tf(%22%25.2f\n-%5Cn\n %22, parce\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-19-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor float64\n    var parcelas float64\n    fmt.Scan(&valor, &parcelas)\n    valor *= (1 + 0.05*(parcelas-1))\n    cada := valor / parcelas\n    fmt.Printf(\"%.2f\\n\", parcelas)\n    fmt.Printf(\"%.2f\\n\", cada)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
