@@ -5,5 +5,13 @@ func main() {
     fmt.Scan(&C)
     fmt.Scan(&A)
     
-        fmt.Println()
+viagem := C / A 
+resto := C % A
+
+    if viagem == 0 {
+        fmt.Println(viagem)
+    }   
+    if resto != 0 {
+        viagem = viagem +1
+    }    
 }

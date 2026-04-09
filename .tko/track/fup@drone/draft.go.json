@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-04-07_17-42-27",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,466 +41,34 @@\n     \n-var A, B, C, H, L int%0A    fmt.Scan(&A)%0A    fmt.Scan(&B)%0A    fmt.Scan(&C)%0A    fmt.Scan(&H)%0A    fmt.Scan(&L)%0A%0A    if (A%3C= H && B %3C= L) %7C%7C (A %3C= L && B %3C= H) %7B%0A        fmt.Println(%22S%22)%0A    %7D%0A    if (A %3C= H && C %3C= L) %7C%7C (A %3C= L && C %3C= H) %7B%0A        fmt.Println(%22S%22)%0A    %7D%0A    if (B %3C= H && C %3C= L) %7C%7C (B %3C= L && C %3C= H) %7B%0A        fmt.Println(%22S%22)%0A    %7D%0A    (C %3C= H && A %3C= L) %7C%7C (C %3C= L && A %3C= H) %7C%7C (C %3C= H && B %3C= L) %7C%7C (C %3C= L && B %3C= H)%7B%0A    fmt.Println(%22S\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-09_13-39-15",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -149,27 +149,8 @@\n L)%0A%0A\n-    pass := false%0A%0A\n     \n@@ -146,33 +146,32 @@\n n(&L)%0A%0A    if (A\n- \n %3C= H && B %3C= L) \n@@ -198,35 +198,40 @@\n ) %7B%0A        \n-pass = true\n+fmt.Println(%22S%22)\n %0A    %7D%0A    i\n@@ -279,35 +279,40 @@\n ) %7B%0A        \n-pass = true\n+fmt.Println(%22S%22)\n %0A    %7D%0A    i\n@@ -368,83 +368,121 @@\n     \n-pass = true\n+fmt.Println(%22S%22)\n %0A    %7D%0A\n-%0A\n     \n-if pass %7B%0A        fmt.Println(%22S%22)%0A    %7D else %7B%0A    \n+(C %3C= H && A %3C= L) %7C%7C (C %3C= L && A %3C= H) %7C%7C (C %3C= H && B %3C= L) %7C%7C (C %3C= L && B %3C= H)%7B%0A\n     \n@@ -498,17 +498,10 @@\n ln(%22\n-N%22)%0A    %7D%0A%7D%0A\n+S%22)%0A%7D\n %0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-09_13-40-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var A, B, C, H, L int\n    fmt.Scan(&A)\n    fmt.Scan(&B)\n    fmt.Scan(&C)\n    fmt.Scan(&H)\n    fmt.Scan(&L)\n\n    pass := false\n\n    if (A <= H && B <= L) || (A <= L && B <= H) {\n        pass = true\n    }\n    if (A <= H && C <= L) || (A <= L && C <= H) {\n        pass = true\n    }\n    if (B <= H && C <= L) || (B <= L && C <= H) {\n        pass = true\n    }\n\n    if pass {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n\n",
+            "lines": "31"
         }
     ]
 }

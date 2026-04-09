@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-23_12-24-15",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -49,12 +49,27 @@\n Println(\n+%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-09_12-40-49",
+            "content": "@@ -41,275 +41,20 @@\n     \n-var n1, n2 int%0A    fmt.Scan(&n1, &n2)%0A    %0A    // Divis%C3%A3o inteira%0A    r1 := n1/n2%0A    // Resto da divis%C3%A3o%0A    r2 := n1 %25 n2%0A    // Divis%C3%A3o com ponto flutuante%0A    r3 := float64(n1) / float64(n2)%0A    %0A    fmt.Println(r1)%0A    fmt.Println(r2)%0A    fmt.Printf(%22%25.2f%5Cn%22, r3\n+fmt.Println(\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-09_13-08-55",
+            "content": "@@ -83,37 +83,124 @@\n     \n-r1 := n1/n2%0A    r2 := n1 %25 n2\n+%0A    // Divis%C3%A3o inteira%0A    r1 := n1/n2%0A    // Resto da divis%C3%A3o%0A    r2 := n1 %25 n2%0A    // Divis%C3%A3o com ponto flutuante\n %0A   \n@@ -228,24 +228,29 @@\n float64(n2)%0A\n+    %0A\n     fmt.Prin\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_13-12-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2 int\n    fmt.Scan(&n1, &n2)\n    r1 := n1/n2\n    r2 := n1 % n2\n    r3 := float64(n1) / float64(n2)\n    fmt.Println(r1)\n    fmt.Println(r2)\n    fmt.Printf(\"%.2f\\n\", r3)\n}\n",
+            "lines": "12"
         }
     ]
 }
