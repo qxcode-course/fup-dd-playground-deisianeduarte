@@ -16,15 +16,15 @@ sources:
   tasks: null
 expanded:
 - fup@if2
+- fup@for1
 - fup@str_extra
 - fup@if1
-- fup@if_extra
 - fup@base
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@drone
+selected: fup@base
