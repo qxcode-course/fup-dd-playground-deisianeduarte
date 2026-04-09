@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-09_00-13-10",
+            "content": "@@ -45,95 +45,16 @@\n var \n-c, b, g, m int%0A    fmt.Scan(&c)%0A    fmt.Scan(&b)%0A    fmt.Scan(&g)%0A    fmt.Scan(&m)%0A    \n+C, F int\n %0A   \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-09_00-16-25",
+            "content": "@@ -128,59 +128,44 @@\n &m)%0A\n-%0A\n     \n-if b + g + m %3C c %7B%0A        fmt.Println(1)%0A    %7D\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-09_00-20-11",
+            "content": "@@ -181,59 +181,6 @@\n   %7D%0A\n-    if b + g + m == c %7B%0A        fmt.Println(1)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-09_00-21-04",
+            "content": "@@ -150,25 +150,8 @@\n %3C c \n-%7C%7C b + g + m == c\n %7B%0A  \n@@ -184,16 +184,30 @@\n %0A    if \n+b + g + m == c\n  %7B%0A     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-09_00-21-28",
+            "content": "@@ -194,10 +194,49 @@\n )%0A    %7D%0A\n+    if  %7B%0A        fmt.Println(1)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-09_00-21-47",
+            "content": "@@ -198,58 +198,6 @@\n   %7D%0A\n-    if b + g + m %3E c %7B%0A        fmt.Println(0)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-09_00-22-50",
+            "content": "@@ -241,9 +241,9 @@\n tln(\n-2\n+0\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-09_00-23-06",
+            "content": "@@ -51,17 +51,16 @@\n  b, g, m\n-,\n  int%0A   \n@@ -133,17 +133,10 @@\n     \n+i\n f\n-rutas :=\n  b +\n@@ -145,51 +145,79 @@\n  + m\n-%0A    viagem := frutas / c%0A %0A    if frutas %25\n+ %3C c %7C%7C b + g + m == c%7B%0A        fmt.Println(1)%0A    %7D%0A    if b + g + m %3E\n  c %7B\n@@ -241,18 +241,15 @@\n tln(\n-1\n+2\n )%0A  \n-%7D%0A  \n   \n+%7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-09_00-43-53",
+            "content": "@@ -196,14 +196,11 @@\n as %25\n+ \n c \n-!= 0\n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_00-44-47",
+            "content": "@@ -224,16 +224,8 @@\n tln(\n-viagem +\n 1)%0A \n@@ -235,26 +235,7 @@\n     \n-fmt.Println(viagem)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_00-46-43",
+            "content": "@@ -202,23 +202,38 @@\n != 0\n- \n %7B%0A    \n+    fmt.Println(\n viagem +\n +%0A  \n@@ -228,17 +228,18 @@\n viagem +\n-+\n+1)\n %0A  %7D%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_00-47-41",
+            "content": "@@ -52,23 +52,16 @@\n b, g, m,\n- frutas\n  int%0A   \n@@ -137,16 +137,17 @@\n  frutas \n+:\n = b + g \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_00-47-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, b, g, m, frutas int\n    fmt.Scan(&c)\n    fmt.Scan(&b)\n    fmt.Scan(&g)\n    fmt.Scan(&m)\n\n    frutas = b + g + m\n    viagem := frutas / c\n \n    if frutas %c != 0 {\n    viagem ++\n  }\n    fmt.Println(viagem)\n}\n",
+            "lines": "17"
+        }
+    ]
+}
