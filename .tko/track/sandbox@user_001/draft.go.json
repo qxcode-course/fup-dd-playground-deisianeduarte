@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_16-49-09",
+            "content": "@@ -41,185 +41,35 @@\n     \n-var lista %5B%5Dint = %5B%5Dint%7B1, 2, 3, 4, 5, 6, 7%7D%0A    var nomes %5B%5Dstring = %5B%5Dstring%7B%22uvs%22, %22ovo%22, %22eva%22%7D%0A    fmt.Println(nomes%5B2%5D) // uva%0A    fmt.Println(lista)%0A    fmt.Println(nomes\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-55-15",
+            "content": "@@ -36,34 +36,12 @@\n () %7B\n- // lista estaitica\n %0A   \n- //\n  var\n@@ -137,17 +137,16 @@\n  %22eva%22%7D%0A\n-%0A\n     fmt.\n@@ -159,17 +159,17 @@\n n(nomes%5B\n-4\n+2\n %5D) // uv\n@@ -174,53 +174,11 @@\n uva%0A\n-%0A\n    \n- // nomes%5B2%5D = macarrao // alterar%0A    //\n  fmt\n@@ -196,19 +196,16 @@\n sta)%0A   \n- //\n  fmt.Pri\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-57-29",
+            "content": "@@ -182,17 +182,17 @@\n n(nomes%5B\n-2\n+4\n %5D) // uv\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_16-57-36",
+            "content": "@@ -141,17 +141,17 @@\n ring%7B%22uv\n-a\n+s\n %22, %22ovo%22\n@@ -290,42 +290,4 @@\n )%0A%7D%0A\n- %0Avar idades %5B%5D int = make(%5B%5Dint, 10)%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_16-58-58",
+            "content": "@@ -103,27 +103,24 @@\n 5, 6, 7%7D%0A   \n- //\n  var nomes %5B\n@@ -159,27 +159,24 @@\n  %22eva%22%7D%0A%0A   \n- //\n  fmt.Println\n@@ -328,25 +328,4 @@\n 10)%0A\n-fmt.Println(idades) %0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_16-59-39",
+            "content": "@@ -296,34 +296,9 @@\n )%0A%7D%0A\n-var qtd int%0Afmt.Scan(&qtd)\n+ \n %0Avar\n@@ -330,11 +330,10 @@\n nt, \n-qtd\n+10\n )%0Afm\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-00-30",
+            "content": "@@ -290,16 +290,17 @@\n (nomes)%0A\n+%7D\n %0Avar qtd\n@@ -377,10 +377,8 @@\n dades) %0A\n-%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-00-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() { // lista estaitica\n    // var lista []int = []int{1, 2, 3, 4, 5, 6, 7}\n    // var nomes []string = []string{\"uva\", \"ovo\", \"eva\"}\n\n    // fmt.Println(nomes[2]) // uva\n\n    // nomes[2] = macarrao // alterar\n    // fmt.Println(lista)\n    // fmt.Println(nomes)\n\nvar qtd int\nfmt.Scan(&qtd)\nvar idades [] int = make([]int, qtd)\nfmt.Println(idades) \n}\n",
+            "lines": "17"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-32-24",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,187 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    arr := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    for _, valor := range arr %7B%0A        fmt.Println(valor)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_17-45-03",
+            "content": "@@ -204,16 +204,18 @@\n mt.Print\n+ln\n (valor)%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-45-32",
+            "content": "@@ -208,17 +208,9 @@\n rint\n-f(%22%25d %22, \n+(\n valo\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-45-45",
+            "content": "@@ -208,17 +208,17 @@\n rintf(%22%25\n-v\n+d\n  %22, valo\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-45-54",
+            "content": "@@ -208,11 +208,16 @@\n rint\n-ln(\n+f(%22%25v %22,\n  val\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-46-06",
+            "content": "@@ -144,17 +144,17 @@\n an(&arr%5B\n-0\n+i\n %5D)%0A    %7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-48-18",
+            "content": "@@ -144,17 +144,17 @@\n an(&arr%5B\n-i\n+0\n %5D)%0A    %7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-48-25",
+            "content": "@@ -111,17 +111,16 @@\n := 0; i \n-=\n %3C n; i++\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-49-03",
+            "content": "@@ -115,10 +115,10 @@\n ; i \n-%3C\n =\n+%3C\n  n; \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-49-11",
+            "content": "@@ -112,16 +112,17 @@\n = 0; i %3C\n+=\n  n; i++ \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-52-24",
+            "content": "@@ -225,27 +225,6 @@\n   %7D%0A\n-    fmt.Print(%22 %5Cn%22)%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-54-27",
+            "content": "@@ -236,15 +236,16 @@\n .Print(%22\n+ \n %5Cn%22)%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-54-55",
+            "content": "@@ -221,11 +221,30 @@\n )%0A    %7D%0A\n+    fmt.Print(%22%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-56-08",
+            "content": "@@ -71,52 +71,8 @@\n n)%0A%0A\n-    if n == 0 %7B%0A        fmt.Println()%0A    %7D%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-58-49",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    if n == 0 {\n        fmt.Println()\n    }\n    arr := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&arr[i])\n    }\n\n    for _, valor := range arr {\n        fmt.Println( valor)\n    }\n\n}\n",
+            "lines": "21"
+        }
+    ]
+}
