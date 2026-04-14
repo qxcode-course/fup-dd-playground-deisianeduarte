@@ -67,7 +67,27 @@
         },
         {
             "label": "2026-04-09_13-59-35",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, A int\n    fmt.Scan(&C)\n    fmt.Scan(&A)\n    \nviagem := C / A \nresto := C % A\n\n    if viagem == 0 {\n        fmt.Println(viagem)\n    }   \n    if resto != 0 {\n        viagem = viagem +1\n\n    }    \n}\n",
+            "content": "@@ -227,16 +227,17 @@\n agem +1%0A\n+%0A\n     %7D   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-11_14-29-44",
+            "content": "@@ -125,19 +125,16 @@\n %25 A%0A%0A   \n- //\n  if viag\n@@ -149,18 +149,16 @@\n %7B%0A      \n-//\n   fmt.Pr\n@@ -179,10 +179,8 @@\n     \n-//\n %7D   \n@@ -227,24 +227,24 @@\n agem +1%0A\n+\n     %7D   \n %0A    fmt\n@@ -239,32 +239,8 @@\n %7D   \n-%0A    fmt.Println(viagem)\n  %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-11_14-33-44",
+            "content": "@@ -126,16 +126,18 @@\n  A%0A%0A    \n+//\n  if viag\n@@ -152,16 +152,18 @@\n %7B%0A      \n+//\n   fmt.Pr\n@@ -176,24 +176,26 @@\n viagem)%0A    \n+//\n %7D   %0A    if \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-11_14-34-10",
+            "content": "@@ -210,17 +210,29 @@\n     \n+   \n viagem \n-++\n+= viagem +1\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-11_14-34-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, A int\n    fmt.Scan(&C)\n    fmt.Scan(&A)\n    \nviagem := C / A \nresto := C % A\n\n     if viagem == 0 {\n        fmt.Println(viagem)\n    }   \n    if resto != 0 {\n     viagem ++\n    }   \n    fmt.Println(viagem) \n}\n",
             "lines": "18"
         }
     ]

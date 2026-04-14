@@ -8,10 +8,11 @@ func main() {
 viagem := C / A 
 resto := C % A
 
-    if viagem == 0 {
+     if viagem == 0 {
         fmt.Println(viagem)
     }   
     if resto != 0 {
-        viagem = viagem +1
-    }    
+     viagem ++
+    }   
+    fmt.Println(viagem) 
 }

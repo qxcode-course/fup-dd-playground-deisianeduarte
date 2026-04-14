@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-10-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n      var M, A, B int\n    fmt.Scan(&M)\n    fmt.Scan(&A)\n    fmt.Scan(&B)\n\n    filho := M - (A + B)\n    \nif filho > A && filho > B {\n    fmt.Println(filho)\n}\nif A > filho && A > B {\n    fmt.Println(A)\n}\nif B > filho && B > A {\n    fmt.Println(B)\n}\n}\n",
+            "lines": "20"
+        }
+    ]
+}
