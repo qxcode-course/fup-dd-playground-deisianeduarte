@@ -60,3 +60,16 @@ func main() {
     var montante []int = make([]int, 0, 1)
     fmt.Println(montante, len(montante), cap(montante))
     montante = append(montante, 7, 3, 2, 1, 9, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2)
+    // album: 1, 2, 3, 4, 5, 7
+    // trocar: 4, 3, 2, 1, 2, 5
+    num, err := strconv.Atoi("32432")
+    if err == nil {
+        fmt.Println(num)
+    } else {
+        fmt.Println(err)
+    }
+    album, repet := separar_figurinhas(montante)
+    slices.Sort(repet)
+    fmt.Println(album)
+    fmt.Println(repet)
+}

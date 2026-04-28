@@ -22,13 +22,13 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
+- fup@if1
+- fup@base
 - fup@if2
 - fup@if_extra
-- fup@if1
-- fup@list
+- fup@for1
 - sandbox@sandbox
-- fup@base
+- fup@list
 flags:
   inbox: all
   panel: skills

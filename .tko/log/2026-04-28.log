@@ -1,0 +1,4 @@
+2026-04-28 16:09:03, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-04-28 16:09:05, EXEC, v:1, k:sandbox@user_002, mode:FULL, size:75, fail:COMP
+2026-04-28 16:09:07, EXEC, v:1, k:sandbox@user_002, mode:FULL, fail:COMP
+2026-04-28 16:09:16, EXEC, v:1, k:sandbox@user_002, mode:FULL, fail:COMP
