@@ -1,5 +1,13 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var a int
+    fmt.Scan(&a)
+    
+    if  (a % 2) == 0 {
+        fmt.Println("PAR")
+    }
+    if a % 2 != 0 {
+        fmt.Println("IMPAR")
+    }
 }

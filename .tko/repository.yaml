@@ -22,13 +22,13 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
 - fup@base
-- fup@if2
-- fup@if_extra
-- fup@for1
 - sandbox@sandbox
 - fup@list
+- fup@if2
+- fup@if_extra
+- fup@if1
+- fup@for1
 flags:
   inbox: all
   panel: skills
@@ -36,5 +36,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: sandbox@user_002
-selected_index: 2
+selected: fup@par
+selected_index: 53
