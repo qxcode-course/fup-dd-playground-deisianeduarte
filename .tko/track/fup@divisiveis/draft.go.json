@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-05-03_18-55-50",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,102 +41,35 @@\n     \n-var a int%0Afmt.Scan(&a)%0Aif a %25 2 == 0 %7B%0A    fmt.Println(%22nao%22)%0A%7D else %7B%0A    fmt.Println(%22sim%22)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-40-04",
+            "content": "@@ -105,21 +105,12 @@\n )%0A%7D \n-if a %25 2 == 1\n+else\n  %7B%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-05_17-40-46",
+            "content": "@@ -100,17 +100,17 @@\n %22nao%22)%0A%7D\n-%0A\n+ \n if a %25 2\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-05_17-41-05",
+            "content": "@@ -46,11 +46,8 @@\n ar a\n-, b\n  int\n@@ -64,22 +64,8 @@\n &a)%0A\n-fmt.Scan(&b)%0A%0A\n if a\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-05_17-42-03",
+            "content": "@@ -92,22 +92,8 @@\n 2 ==\n- 0 && b %25 2 ==\n  0 %7B\n@@ -133,22 +133,8 @@\n 2 ==\n- 1 && b %25 2 ==\n  1 %7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-42-44",
+            "content": "@@ -89,17 +89,17 @@\n  %25 2 == \n-1\n+0\n  && b %25 \n@@ -107,9 +107,9 @@\n  == \n-1\n+0\n  %7B%0A \n@@ -128,20 +128,43 @@\n ln(%22\n-sim\n+nao\n %22)%0A%7D\n- else\n+%0Aif a %25 2 == 1 && b %25 2 == 1\n  %7B%0A \n@@ -175,22 +175,22 @@\n mt.Println(%22\n-nao\n+sim\n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-44-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\nfmt.Scan(&a)\nfmt.Scan(&b)\n\nif a % 2 == 1 && b % 2 == 1 {\n    fmt.Println(\"sim\")\n} else {\n    fmt.Println(\"nao\")\n}\n}\n",
+            "lines": "13"
         }
     ]
 }
