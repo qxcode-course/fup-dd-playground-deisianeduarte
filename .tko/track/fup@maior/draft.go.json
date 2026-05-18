@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-53-51",
+            "content": "@@ -53,15 +53,11 @@\n , c \n-float64\n+int\n %0A   \n@@ -118,26 +118,16 @@\n f a \n-== c && b %3C a\n+%3E b\n  && \n-b\n+a\n  %3E c\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-58-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n    if a == c && b < a && b > c {\n        fmt.Println(a)\n    } else if b > c {\n        fmt.Println(b)\n    } else {\n        fmt.Println(c)  \n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

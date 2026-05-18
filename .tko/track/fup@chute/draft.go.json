@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-41-07",
+            "content": "@@ -41,184 +41,35 @@\n     \n-var a, b, c int%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    fmt.Scan(&c)%0A%0A    if a - b %3E a - c %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else %7B%0A        fmt.Println(%22terceiro%22)%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-18_17-46-28",
+            "content": "@@ -105,18 +105,16 @@\n an(&c)%0A%0A\n-%0A%0A\n     if a\n@@ -174,25 +174,8 @@\n lse \n-if a - b %3C a - c \n %7B%0A  \n@@ -213,50 +213,12 @@\n    %7D\n- else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+%0A    \n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-18_17-49-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n\n\n    if a - b > a - c {\n        fmt.Println(\"segundo\")\n    } else if a - b < a - c {\n        fmt.Println(\"terceiro\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
