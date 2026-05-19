@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-02-55",
+            "content": "@@ -41,139 +41,34 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A    fmt.Print(%22%5B%22)%0A    for i:= a; i %3C b; i++ %7B%0A        fmt.Print(i, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-07-05",
+            "content": "@@ -75,13 +75,8 @@\n &b)%0A\n-    %0A\n     \n@@ -87,17 +87,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_17-07-16",
+            "content": "@@ -71,16 +71,20 @@\n &a, &b)%0A\n+    \n %0A    fmt\n@@ -96,17 +96,16 @@\n t(%22%5B %22)%0A\n-%0A\n     for \n@@ -117,16 +117,16 @@\n ; i \n-%3E\n+%3C\n  b; i\n---\n+++\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_17-09-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    fmt.Print(\"[ \")\n\n    for i:= a; i > b; i-- {\n        fmt.Print(i, \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "13"
+        }
+    ]
+}

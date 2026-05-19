@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-49-24",
+            "content": "@@ -41,268 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A%0A    soma := 0%0A%0A    if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D else %7B%0A%0A        for i := a; i %3C b; i++ %7B%0A        if i %25 2 == 0 && i %25 3 == 0 %7B%0A            soma = soma + i%0A        %7D%0A        %7D%0A        fmt.Println(soma)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_18-00-07",
+            "content": "@@ -147,16 +147,17 @@\n  else %7B%0A\n+%0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-19_18-01-32",
+            "content": "@@ -170,17 +170,16 @@\n = a; i %3C\n-=\n  b; i++ \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_18-02-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    soma := 0\n\n    if a > b {\n        fmt.Println(\"invalido\")\n    } else {\n        for i := a; i <= b; i++ {\n        if i % 2 == 0 && i % 3 == 0 {\n            soma = soma + i\n        }\n        }\n        fmt.Println(soma)\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
