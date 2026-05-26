@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-19_17-26-54",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -1,48 +1,32 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B\n+@@ -41,228 +41,35 @@\n %0A    \n+ %0A-\n var \n@@ -33,17 +33,19 @@\n a, b int\n-%0A\n+%250A\n     fmt.\n@@ -63,29 +63,14 @@\n )   \n-%0A    fmt.Print(%22%5B %22)%0A\n+%250A%250A\n     \n@@ -87,9 +87,11 @@\n ; i \n-%3C\n+%253C\n = b;\n@@ -95,18 +95,22 @@\n  b; i++ \n-%7B%0A\n+%257B%250A\n         \n@@ -119,16 +119,22 @@\n  i%252\n+52\n  == 0 \n-%7B%0A\n+%257B%250A\n     \n@@ -149,25 +149,27 @@\n continue\n-%0A\n+%250A\n         \n %7D%0A      \n@@ -156,26 +156,30 @@\n e%250A        \n-%7D%0A\n+%257D%250A\n         if i\n@@ -184,18 +184,22 @@\n  i == b \n-%7B%0A\n+%257B%250A\n         \n@@ -207,25 +207,27 @@\n    break\n-%0A\n+%250A\n         \n %7D else %7B\n@@ -222,17 +222,23 @@\n     \n-%7D\n+%257D\n  else \n-%7B%0A\n+%257B%250A\n     \n@@ -262,48 +262,82 @@\n (i, \n-%22 %22)%0A        %7D%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%7D\n+%2522 %2522)%250A        %257D%250A    %257D%0A+fmt.Println(%2522Hello, World!%2522)%0A %250A%257D%250A\n %0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-26_13-29-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)   \n    fmt.Print(\"[ \")\n    for i := a; i <= b; i++ {\n        if i%2 == 0 {\n            continue\n        }\n        if i == b {\n            break\n        } else {\n            fmt.Print(i, \" \")\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "18"
         }
     ]
 }
