@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_17-31-57",
+            "content": "@@ -23,233 +23,53 @@\n mt%22%0A\n-%0Atype Bota struct %7B%0A    pe string%0A    tam int%0A%7D%0Afunc main() %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    botas := make(%5B%5DBota, qtd)%0A    for i := range botas %7B%0A        fmt.Scan(&botas%5Bi%5D.pe, &botas%5Bi%5D.tam)%0A    %7D%0A    fmt.Println(botas\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_17-44-45",
+            "content": "@@ -67,17 +67,16 @@\n m int%0A%7D%0A\n-%0A\n func mai\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-25_17-45-56",
+            "content": "@@ -199,19 +199,18 @@\n otas%5Bi%5D.\n-tam\n+pe\n , &botas\n@@ -213,18 +213,19 @@\n otas%5Bi%5D.\n-pe\n+tam\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_17-46-32",
+            "content": "@@ -237,16 +237,18 @@\n mt.Print\n+ln\n (botas)%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_17-47-10",
+            "content": "package main\nimport \"fmt\"\n\ntype Bota struct {\n    pe string\n    tam int\n}\n\nfunc main() {\n    qtd := 0\n    fmt.Scan(&qtd)\n    botas := make([]Bota, qtd)\n    for i := range botas {\n        fmt.Scan(&botas[i].tam, &botas[i].pe)\n    }\n    fmt.Print(botas)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

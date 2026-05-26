@@ -22,6 +22,7 @@ Organizar dados em um vetor é uma tarefa comum em várias situações. Suponha 
 
 ## Testes
 
+
 ```py
 >>>>>>>> INSERT
 3

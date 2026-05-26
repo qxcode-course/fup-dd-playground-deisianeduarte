@@ -62,8 +62,18 @@
         },
         {
             "label": "2026-03-10_18-02-06",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2 float64 //variav\u00e9l\n   \n    fmt.Scan(&num2, &num2) //lendo e escrevendo EM num1\n    fmt.Println(\"ol\u00e1 mundo\" , num1, num2)\n}\n",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -43,35 +43,142 @@\n     \n-fmt.Println(%22Hello, World!%22\n+var num1, num2 float64 //variav%C3%A9l%0A   %0A    fmt.Scan(&num2, &num2) //lendo e escrevendo EM num1%0A    fmt.Println(%22ol%C3%A1 mundo%22 , num1, num2\n )%0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-25_17-06-31",
+            "content": "@@ -23,254 +23,53 @@\n mt%22%0A\n-%0Atype Pessoa struct %7B%0A    nome  string%0A    idade int%0A%7D%0A%0Afunc main() %7B%0A    var deisi Pessoa = Pessoa%7B%0A        nome: %22Deisi%22,%0A        idade: 18,%0A    %7D%0A    fmt.Println(deisi)%0A    deisi.nome = %22Deisi%22%0A    deisi.idade += 18%0A    fmt.Println(deisi.idade\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_17-15-06",
+            "content": "package main\nimport \"fmt\"\n\ntype Pessoa struct {\n    nome  string\n    idade int\n}\n\nfunc main() {\n    var deisi Pessoa = Pessoa{\n        nome: \"Deisi\",\n        idade: 18,\n    }\n    fmt.Println(deisi)\n    deisi.nome = \"Deisi\"\n    deisi.idade += 18\n    fmt.Println(deisi.idade)\n}\n",
+            "lines": "18"
         }
     ]
 }

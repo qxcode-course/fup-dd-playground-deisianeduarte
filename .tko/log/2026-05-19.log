@@ -147,3 +147,5 @@
 2026-05-19 18:17:51, EXEC, v:1, k:fup@filhos, mode:FULL, rate:100, size:15
 2026-05-19 18:18:45, MOVE, v:1, k:fup@filhos, mode:BACK
 2026-05-19 18:18:50, SELF, v:1, k:fup@filhos, self:1, rate:100
+2026-05-19 18:17:48, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-19 18:17:51, MOVE, v:1, k:fup@filhos, mode:EDIT

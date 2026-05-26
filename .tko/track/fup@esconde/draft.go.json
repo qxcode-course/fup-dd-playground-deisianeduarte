@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_14-04-04",
+            "content": "@@ -83,17 +83,17 @@\n := 1; i \n-=\n+%3C\n = n; i +\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-21_14-04-29",
+            "content": "@@ -87,9 +87,9 @@\n ; i \n-%3C\n+=\n = n;\n@@ -115,9 +115,9 @@\n i%252 \n-!\n+=\n = 0 \n@@ -183,9 +183,9 @@\n ; i \n-%3E\n+=\n = 0;\n@@ -199,33 +199,33 @@\n %0A        if i%252 \n-=\n+!\n = 0 %7B%0A          \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-21_14-56-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    for i := 1; i <= n; i ++ {\n        if i%2 != 0 {\n            fmt.Println(i)\n        }\n    }\n    for i := n; i >= 0; i -- {\n        if i%2 == 0 {\n            fmt.Println(i)\n        }\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

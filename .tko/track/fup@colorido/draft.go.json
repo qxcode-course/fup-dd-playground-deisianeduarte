@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_14-26-47",
+            "content": "@@ -41,337 +41,35 @@\n     \n-var n int%0A    var pe rune%0A    fmt.Scan(&n)%0A    fmt.Scan(&pe)%0A%0A    fmt.Print(%22%5B %22)%0A%0A    if pe == 'd' %7B%0A    %0A%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Print(i, %22 %22)%0A        %0A    %7D%0A    for i:= n+1; i %3C= 9; i++ %7B%0A        fmt.Print(i, %22 %22)%0A    %7D%0A            if n != 10 %7B%0A        fmt.Print(%22ceu %22)%0A    %7D%0A    %7D%0A        fmt.Println(%22%5D%22)%0A%7D %0A\n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-23_13-05-08",
+            "content": "@@ -148,55 +148,8 @@\n    %0A\n-        if n != 0 %7B%0A            fmt.Print(%220d%22)\n %0A   \n@@ -158,17 +158,17 @@\n or i := \n-1\n+0\n ; i %3C n;\n@@ -189,24 +189,29 @@\n  fmt.Print(i\n+, %22 %22\n )%0A        %7D%0A\n@@ -204,25 +204,24 @@\n  %22)%0A        \n-%7D\n %0A    %7D%0A    f\n@@ -265,16 +265,21 @@\n .Print(i\n+, %22 %22\n )%0A    %7D%0A\n@@ -337,45 +337,16 @@\n     \n-        %7D%0A        %0A    %7D%0A            \n+%7D%0A    %7D%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-23_13-23-28",
+            "content": "@@ -189,17 +189,16 @@\n rint(%220d\n- \n %22)%0A    f\n@@ -246,70 +246,8 @@\n (i)%0A\n-        if i %25 2 == 0 %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A\n     \n@@ -258,17 +258,16 @@\n %7D%0A    %7D%0A\n-%0A\n     for \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-23_13-24-52",
+            "content": "@@ -299,53 +299,8 @@\n  %22)%0A\n-        %7D else %7B%0A            fmt.Print(%22e %22)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_13-25-14",
+            "content": "@@ -243,17 +243,16 @@\n rint(i)%0A\n-%0A\n         \n@@ -287,33 +287,32 @@\n fmt.Print(%22d %22)%0A\n-%0A\n         %7D else %7B\n@@ -366,21 +366,17 @@\n %7D%0A    %7D%0A\n-    \n %0A\n+\n     for \n@@ -423,132 +423,14 @@\n (i)%0A\n-        %0A        if i %25 2 == 0 %7B%0A            fmt.Print(%22d %22)%0A%0A        %7D else %7B%0A            fmt.Print(%22e %22)%0A        %7D%0A\n     %7D%0A\n-%0A\n     \n@@ -501,24 +501,36 @@\n      %0A    %7D%0A\n+            \n         fmt.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-23_13-30-53",
+            "content": "@@ -417,32 +417,40 @@\n    fmt.Print(i)%0A\n+        \n %0A        if i %25 \n@@ -553,521 +553,8 @@\n  %7D%0A%0A\n-            if n != 10 %7B%0A        fmt.Print(%22ceu %22)%0A            %7D%0A        %0A    %7D%0A        if pe == 'e' %7B%0A    %0A        if n != 0 %7B%0A            fmt.Print(%220e %22)%0A    for i := 1; i %3C n; i++ %7B%0A        fmt.Print(i)%0A%0A        if i %25 2 == 0 %7B%0A            fmt.Print(%22e %22)%0A%0A        %7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A        %7D%0A    %7D%0A    %0A    for i:= n+1; i %3C= 9; i++ %7B%0A        fmt.Print(i)%0A        %0A        if i %25 2 == 0 %7B%0A            fmt.Print(%22e %22)%0A%0A        %7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A    %7D%0A%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-23_13-33-18",
+            "content": "@@ -193,33 +193,16 @@\n (%220d %22)%0A\n-        %0A        \n     for \n@@ -218,32 +218,24 @@\n  %3C n; i++ %7B%0A\n-        \n         fmt.\n@@ -244,36 +244,32 @@\n int(i)%0A%0A        \n-    \n if i %25 2 == 0 %7B%0A\n@@ -260,36 +260,32 @@\n if i %25 2 == 0 %7B%0A\n-    \n             fmt.\n@@ -404,36 +404,32 @@\n ; i++ %7B%0A        \n-    \n fmt.Print(i)%0A%0A  \n@@ -430,32 +430,24 @@\n i)%0A%0A        \n-      \n-  \n if i %25 2 == \n@@ -446,32 +446,24 @@\n  %25 2 == 0 %7B%0A\n-        \n             \n@@ -562,32 +562,24 @@\n f n != 10 %7B%0A\n-        \n         fmt.\n@@ -649,36 +649,32 @@\n  %7B%0A    %0A        \n-    \n if n != 0 %7B%0A    \n@@ -661,36 +661,32 @@\n     if n != 0 %7B%0A\n-    \n             fmt.\n@@ -694,36 +694,24 @@\n rint(%220e %22)%0A\n-            \n     for i :=\n@@ -723,36 +723,24 @@\n  %3C n; i++ %7B%0A\n-            \n         fmt.\n@@ -749,32 +749,16 @@\n int(i)%0A%0A\n-                \n         \n@@ -785,32 +785,16 @@\n         \n-        \n-        \n fmt.Prin\n@@ -814,224 +814,76 @@\n     \n-                        %7D else %7B%0A                                    fmt.Print(%22d %22)%0A                                    %7D%0A                                %7D%0A                            %7D%0A    %0A                        \n+%7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A        %7D%0A    %7D%0A    %0A\n     \n@@ -913,32 +913,8 @@\n + %7B%0A\n-                        \n     \n@@ -951,576 +951,220 @@\n     \n-                            if i %25 2 == 0 %7B%0A                                        fmt.Print(%22e %22)%0A%0A                                            %7D else %7B%0A                                                fmt.Print(%22d %22)%0A                                        %7D%0A                                    %7D%0A%0A                                    if n != 10 %7B%0A                                        fmt.Print(%22ceu %22)%0A                                    %7D%0A        %0A                                %7D%0A                                    fmt.Println(%22%5D%22)%0A                            \n+if i %25 2 == 0 %7B%0A            fmt.Print(%22e %22)%0A%0A        %7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A    %7D%0A%0A            if n != 10 %7B%0A        fmt.Print(%22ceu %22)%0A            %7D%0A        %0A    %7D%0A        fmt.Println(%22%5D%22)%0A\n %7D %0A%0A\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-05-23_13-39-24",
+            "content": "@@ -189,24 +189,41 @@\n rint(%220d %22)%0A\n+        %0A        \n     for i :=\n@@ -231,32 +231,40 @@\n 1; i %3C n; i++ %7B%0A\n+        \n         fmt.Prin\n@@ -269,32 +269,36 @@\n int(i)%0A%0A        \n+    \n if i %25 2 == 0 %7B%0A\n@@ -289,32 +289,36 @@\n if i %25 2 == 0 %7B%0A\n+    \n             fmt.\n@@ -437,32 +437,36 @@\n ; i++ %7B%0A        \n+    \n fmt.Print(i)%0A%0A  \n@@ -463,32 +463,40 @@\n int(i)%0A%0A        \n+      \n+  \n if i %25 2 == 0 %7B%0A\n@@ -487,32 +487,40 @@\n if i %25 2 == 0 %7B%0A\n+        \n             fmt.\n@@ -611,32 +611,40 @@\n    if n != 10 %7B%0A\n+        \n         fmt.Prin\n@@ -710,32 +710,36 @@\n  %7B%0A    %0A        \n+    \n if n != 0 %7B%0A    \n@@ -726,32 +726,36 @@\n     if n != 0 %7B%0A\n+    \n             fmt.\n@@ -763,24 +763,36 @@\n rint(%220e %22)%0A\n+            \n     for i :=\n@@ -800,32 +800,44 @@\n 1; i %3C n; i++ %7B%0A\n+            \n         fmt.Prin\n@@ -834,32 +834,48 @@\n   fmt.Print(i)%0A%0A\n+                \n         if i %25 2\n@@ -886,32 +886,48 @@\n 0 %7B%0A            \n+        \n+        \n fmt.Print(%22e %22)%0A\n@@ -939,76 +939,224 @@\n     \n-%7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A        %7D%0A    %7D%0A    %0A\n+                        %7D else %7B%0A                                    fmt.Print(%22d %22)%0A                                    %7D%0A                                %7D%0A                            %7D%0A    %0A                        \n     \n@@ -1174,32 +1174,56 @@\n ; i %3C= 9; i++ %7B%0A\n+                        \n         fmt.Prin\n@@ -1248,220 +1248,576 @@\n     \n-if i %25 2 == 0 %7B%0A            fmt.Print(%22e %22)%0A%0A        %7D else %7B%0A            fmt.Print(%22d %22)%0A        %7D%0A    %7D%0A%0A            if n != 10 %7B%0A        fmt.Print(%22ceu %22)%0A            %7D%0A        %0A    %7D%0A        fmt.Println(%22%5D%22)%0A\n+                            if i %25 2 == 0 %7B%0A                                        fmt.Print(%22e %22)%0A%0A                                            %7D else %7B%0A                                                fmt.Print(%22d %22)%0A                                        %7D%0A                                    %7D%0A%0A                                    if n != 10 %7B%0A                                        fmt.Print(%22ceu %22)%0A                                    %7D%0A        %0A                                %7D%0A                                    fmt.Println(%22%5D%22)%0A                            \n %7D %0A%0A\n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-05-23_13-41-07",
+            "content": "@@ -66,14 +66,8 @@\n rune\n- = 'd'\n %0A   \n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-05-23_13-43-38",
+            "content": "@@ -984,33 +984,33 @@\n      fmt.Print(%22\n-d\n+e\n  %22)%0A%0A        %7D e\n@@ -1030,33 +1030,33 @@\n      fmt.Print(%22\n-e\n+d\n  %22)%0A        %7D%0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-05-23_13-44-05",
+            "content": "@@ -335,33 +335,33 @@\n      fmt.Print(%22\n-d\n+e\n  %22)%0A        %7D%0A  \n@@ -984,33 +984,33 @@\n      fmt.Print(%22\n-e\n+d\n  %22)%0A%0A        %7D e\n@@ -1030,33 +1030,33 @@\n      fmt.Print(%22\n-d\n+e\n  %22)%0A        %7D%0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-05-23_13-46-02",
+            "content": "@@ -335,33 +335,33 @@\n      fmt.Print(%22\n-e\n+d\n  %22)%0A        %7D%0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-05-23_13-46-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    var pe rune = 'd'\n    fmt.Scan(&n)\n    fmt.Scan(&pe)\n\n    fmt.Print(\"[ \")\n\n    if pe == 'd' {\n    \n        if n != 0 {\n            fmt.Print(\"0d \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        if pe == 'e' {\n    \n        if n != 0 {\n            fmt.Print(\"0e \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n        \n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        fmt.Println(\"]\")\n} \n\n",
+            "lines": "77"
+        }
+    ]
+}
