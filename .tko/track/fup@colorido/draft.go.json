@@ -62,8 +62,18 @@
         },
         {
             "label": "2026-05-23_13-46-11",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    var pe rune = 'd'\n    fmt.Scan(&n)\n    fmt.Scan(&pe)\n\n    fmt.Print(\"[ \")\n\n    if pe == 'd' {\n    \n        if n != 0 {\n            fmt.Print(\"0d \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        if pe == 'e' {\n    \n        if n != 0 {\n            fmt.Print(\"0e \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n        \n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        fmt.Println(\"]\")\n} \n\n",
+            "content": "@@ -69,17 +69,16 @@\n e = 'd'%0A\n-%0A\n     fmt.\n@@ -1030,33 +1030,33 @@\n      fmt.Print(%22\n-e\n+d\n  %22)%0A        %7D%0A  \n",
             "lines": "77"
+        },
+        {
+            "label": "2026-05-26_13-34-21",
+            "content": "@@ -1031,33 +1031,33 @@\n      fmt.Print(%22\n-d\n+e\n  %22)%0A        %7D%0A  \n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-05-26_13-34-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    var pe rune = 'd'\n\n    fmt.Scan(&n)\n    fmt.Scan(&pe)\n\n    fmt.Print(\"[ \")\n\n    if pe == 'd' {\n    \n        if n != 0 {\n            fmt.Print(\"0d \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"d \")\n\n        } else {\n            fmt.Print(\"e \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        if pe == 'e' {\n    \n        if n != 0 {\n            fmt.Print(\"0e \")\n    for i := 1; i < n; i++ {\n        fmt.Print(i)\n\n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n        }\n    }\n    \n    for i:= n+1; i <= 9; i++ {\n        fmt.Print(i)\n        \n        if i % 2 == 0 {\n            fmt.Print(\"e \")\n\n        } else {\n            fmt.Print(\"d \")\n        }\n    }\n\n            if n != 10 {\n        fmt.Print(\"ceu \")\n            }\n        \n    }\n        fmt.Println(\"]\")\n} \n\n",
+            "lines": "78"
         }
     ]
 }

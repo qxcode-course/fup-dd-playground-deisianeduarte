@@ -3,6 +3,7 @@ import "fmt"
 func main() {
     var n int
     var pe rune = 'd'
+
     fmt.Scan(&n)
     fmt.Scan(&pe)
 

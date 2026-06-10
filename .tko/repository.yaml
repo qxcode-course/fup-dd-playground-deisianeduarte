@@ -19,7 +19,10 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for1
+- fup@base
+- fup@if1
+- sandbox@sandbox
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -27,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@loop_v
-selected_index: 10
+selected: fup@operacoes
+selected_index: 16

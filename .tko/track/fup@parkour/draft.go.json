@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_17-47-48",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,892 +41,35 @@\n     \n-var m int%0A    fmt.Scan(&m)%0A%0A    anterior := 0%0A    fmt.Scan(&anterior)%0A    var x int%0A    parkour := 0%0A    for i := 1; i %3C m; i++ %7B%0A        fmt.Scan(&x)%0A        if x-anterior %3E 1 %7C%7C x-anterior %3C -1 %7B%0A            anterior = x%0A            parkour++%0A        %7D else %7B%0A            anterior = x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(parkour)/%0A%0A    var elementos int%0A%0A    fmt.Scan(&elementos)%0A%0A    vetorElementos := make(%5B%5Dint, elementos)%0A%0A    for i := 0; i %3C elementos; i++ %7B%0A        fmt.Scan(&vetorElementos%5Bi%5D)%0A    %7D%0A%0A    movimentos := 0%0A%0A    for i := 0; i %3C elementos-1; i++ %7B%0A        if vetorElementos%5Bi%5D %3C vetorElementos%5Bi+1%5D && vetorElementos%5Bi+1%5D-vetorElementos%5Bi%5D %3E 1 %7B%0A            movimentos++%0A        %7D else if vetorElementos%5Bi%5D %3E vetorElementos%5Bi+1%5D && vetorElementos%5Bi%5D-vetorElementos%5Bi+1%5D %3E 1 %7B%0A            movimentos++%0A        %7D%0A    %7D%0A%0A    fmt.Println(movimentos\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_18-12-01",
+            "content": "@@ -39,17 +39,16 @@\n ) %7B%0A    \n-/\n var m in\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-09_18-12-53",
+            "content": "@@ -35,24 +35,25 @@\n ain() %7B%0A    \n+/\n var m int%0A  \n@@ -389,16 +389,17 @@\n parkour)\n+/\n %0A%0A    va\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-09_18-13-05",
+            "content": "@@ -35,16 +35,375 @@\n ain() %7B%0A\n+    var m int%0A    fmt.Scan(&m)%0A%0A    anterior := 0%0A    fmt.Scan(&anterior)%0A    var x int%0A    parkour := 0%0A    for i := 1; i %3C m; i++ %7B%0A        fmt.Scan(&x)%0A        if x-anterior %3E 1 %7C%7C x-anterior %3C -1 %7B%0A            anterior = x%0A            parkour++%0A        %7D else %7B%0A            anterior = x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(parkour)%0A%0A    \n var elem\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-09_18-15-10",
+            "content": "@@ -35,20 +35,16 @@\n ain() %7B%0A\n-    \n var elem\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_18-15-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var elementos int\n\n    fmt.Scan(&elementos)\n\n    vetorElementos := make([]int, elementos)\n\n    for i := 0; i < elementos; i++ {\n        fmt.Scan(&vetorElementos[i])\n    }\n\n    movimentos := 0\n\n    for i := 0; i < elementos-1; i++ {\n        if vetorElementos[i] < vetorElementos[i+1] && vetorElementos[i+1]-vetorElementos[i] > 1 {\n            movimentos++\n        } else if vetorElementos[i] > vetorElementos[i+1] && vetorElementos[i]-vetorElementos[i+1] > 1 {\n            movimentos++\n        }\n    }\n\n    fmt.Println(movimentos)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

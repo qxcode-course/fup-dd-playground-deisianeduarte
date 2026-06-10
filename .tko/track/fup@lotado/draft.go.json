@@ -42,7 +42,17 @@
         },
         {
             "label": "2026-05-23_14-34-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, m int\n    fmt.Scan(&c)\n    q := c * 2\n\n    for i := 0; i <= q; i++ {\n        if i == 0 {\n            fmt.Println(\"vazio\")\n        }\n            if i > 0 && i < c {\n                fmt.Println(\"ainda cabe\")\n        }\n            if i >= c && i < q {\n                fmt.Println(\"lotado\")\n        }\n            if i >= q {\n                fmt.Println(\"hora de partir\")\n        }\n\n        fmt.Scan(&m)\n        i = i + m \n        if i < 0 {\n            i = 0\n        }\n    }\n    \n\n}\n",
+            "content": "@@ -126,17 +126,17 @@\n    if i \n-%3C\n+=\n = 0 %7B%0A  \n@@ -422,24 +422,16 @@\n      %7D%0A%0A\n-        \n         \n@@ -447,32 +447,24 @@\n &m)%0A        \n- \n-       \n i = i + m %0A \n@@ -462,28 +462,16 @@\n  i + m %0A\n-            \n         \n@@ -493,26 +493,16 @@\n         \n-      \n-    \n i = 0%0A  \n@@ -511,39 +511,10 @@\n     \n-                %7D%0A             \n+%7D%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_13-40-36",
+            "content": "@@ -180,24 +180,28 @@\n   %7D%0A        \n+    \n if i %3E 0 && \n@@ -208,16 +208,16 @@\n i %3C c %7B%0A\n-\n         \n@@ -252,32 +252,36 @@\n abe%22)%0A        %7D%0A\n+    \n         if i %3E= \n@@ -289,24 +289,24 @@\n  && i %3C q %7B%0A\n-\n             \n@@ -333,32 +333,36 @@\n ado%22)%0A        %7D%0A\n+    \n         if i %3E= \n@@ -361,24 +361,24 @@\n if i %3E= q %7B%0A\n-\n             \n@@ -422,16 +422,24 @@\n      %7D%0A%0A\n+        \n         \n@@ -459,24 +459,28 @@\n             \n+    \n i = i + m %0A \n@@ -478,16 +478,28 @@\n  i + m %0A\n+            \n         \n@@ -517,24 +517,34 @@\n             \n+      \n+    \n i = 0%0A      \n@@ -537,34 +537,59 @@\n   i = 0%0A        \n-%7D%0A\n+                %7D%0A         \n         %7D%0A    %0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_13-41-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, m int\n    fmt.Scan(&c)\n    q := c * 2\n\n    for i := 0; i <= q; i++ {\n        if i <= 0 {\n            fmt.Println(\"vazio\")\n        }\n        if i > 0 && i < c {\n                fmt.Println(\"ainda cabe\")\n        }\n        if i >= c && i < q {\n                fmt.Println(\"lotado\")\n        }\n        if i >= q {\n                fmt.Println(\"hora de partir\")\n        }\n\n        fmt.Scan(&m)\n            i = i + m \n        if i < 0 {\n            i = 0\n        }\n        }\n    \n\n}\n",
             "lines": "30"
         }
     ]
