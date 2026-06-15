@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_16-29-03",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0A\n func\n@@ -37,396 +37,39 @@\n ) %7B%0A\n-%09var a, b, c float64%0A%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%09fmt.Scan(&c)%0A%0A%09delta := math.Pow(b, 2) - 4*a*c%0A%0A%09if delta %3C 0 %7B%0A%09%09fmt.Println(%22nao ha raiz real%22)%0A%09%7D else if delta == 0 %7B%0A%09%09x := -b / (2 * a)%0A%09%09fmt.Printf(%22%25.2f%5Cn%22, x)%0A%09%7D else %7B%0A%09%09raizDelta := math.Sqrt(delta)%0A%0A%09%09x1 := (-b + raizDelta) / (2 * a)%0A%09%09x2 := (-b - raizDelta) / (2 * a)%0A%0A%09%09fmt.Printf(%22%25.2f%5Cn%22, x1)%0A%09%09fmt.Printf(%22%25.2f%5Cn%22, x2)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-30-32",
+            "content": "@@ -283,19 +283,20 @@\n %7B%0A%09%09\n-x1 := (-b +\n+raizDelta :=\n  mat\n@@ -300,32 +300,57 @@\n math.Sqrt(delta)\n+%0A%0A%09%09x1 := (-b + raizDelta\n ) / (2 * a)%0A%09%09x2\n@@ -363,25 +363,18 @@\n b - \n-math.Sqrt(d\n+raizD\n elta)\n-)\n  / (\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_16-30-58",
+            "content": "@@ -245,35 +245,8 @@\n  a)%0A\n-%09%09if x == 0 %7B%0A%09%09%09x = 0%0A%09%09%7D%0A\n %09%09fm\n@@ -364,66 +364,8 @@\n * a)\n-%0A%09%09if x1 == 0 %7B%0A%09%09%09x1 = 0%0A%09%09%7D%0A%09%09if x2 == 0 %7B%0A%09%09%09x2 = 0%0A%09%09%7D\n %0A%0A%09%09\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-15_16-34-14",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tdelta := math.Pow(b, 2) - 4*a*c\n\n\tif delta < 0 {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t} else if delta == 0 {\n\t\tx := -b / (2 * a)\n\t\tif x == 0 {\n\t\t\tx = 0\n\t\t}\n\t\tfmt.Printf(\"%.2f\\n\", x)\n\t} else {\n\t\tx1 := (-b + math.Sqrt(delta)) / (2 * a)\n\t\tx2 := (-b - math.Sqrt(delta)) / (2 * a)\n\t\tif x1 == 0 {\n\t\t\tx1 = 0\n\t\t}\n\t\tif x2 == 0 {\n\t\t\tx2 = 0\n\t\t}\n\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n\t}\n}\n",
+            "lines": "38"
+        }
+    ]
+}

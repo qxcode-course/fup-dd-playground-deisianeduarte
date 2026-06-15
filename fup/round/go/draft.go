@@ -2,51 +2,40 @@ package main
 
 import "fmt"
 
-func floor(x float64) int {
-	i := int(x)
-	if x < 0 && x != float64(i) {
-		return i - 1
-	}
-	return i
+func floor(num float64) int {
+	return int(num)
 }
 
-func ceil(x float64) int {
-	i := int(x)
-	if x > 0 && x != float64(i) {
-		return i + 1
+func ceil(num float64) int {
+	if num == float64(int(num)) {
+		return int(num)
 	}
-	return i
+	return int(num) + 1
 }
 
-func round(x float64) int {
-	i := int(x)
-	if x >= 0 {
-		if x-float64(i) >= 0.5 {
-			return i + 1
-		}
-		return i
+func round(num float64) int {
+	parteInteira := int(num)
+	parteFracionaria := num - float64(parteInteira)
+
+	if parteFracionaria >= 0.5 {
+		return parteInteira + 1
 	}
-	if float64(i)-x > 0.5 {
-		return i - 1
-	}
-	return i
+	return parteInteira
 }
 
 func main() {
-	var op byte
-	var x float64
+	var op string
+	var num float64
 
-	fmt.Scanf("%c %f", &op, &x)
+	fmt.Scan(&op)
+	fmt.Scan(&num)
 
-	if op == 'f' {
-		fmt.Println(floor(x))
-	} else if op == 'c' {
-		fmt.Println(ceil(x))
-	} else {
-		fmt.Println(round(x))
+	switch op {
+	case "c":
+		fmt.Println(ceil(num))
+	case "f":
+		fmt.Println(floor(num))
+	case "r":
+		fmt.Println(round(num))
 	}
 }
-
-
-// x = numero quebrado
-// i = numero inteiro 

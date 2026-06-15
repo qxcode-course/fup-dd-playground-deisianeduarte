@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-03-24_17-38-55",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -72,185 +72,4 @@\n )%0A%7D%0A\n-//     import %22fmt%22%0A//     func main() %7B    %0A//     x := 0%0A//     for %7B //lop infinito %0A//     x += 1%0A//     if x %3E 10 %7B%0A//     break //sai fora%0A//     %7D%0A//     fmt.Println(x)%0A// %7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-53-52",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,282 +37,42 @@\n ) %7B%0A\n-%09var a, b int%0A%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09if a == b %7B%0A%09%09fmt.Println(%22Empate%22)%0A%09%09return%0A%09%7D%0A%0A%09// Dist%C3%A2ncia de A para B no c%C3%ADrculo de 15 elementos%0A%09dist := (b - a + 15) %25 15%0A%0A%09if dist %3E= 1 && dist %3C= 7 %7B%0A%09%09fmt.Println(%22Jogador 1%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22Jogador 2%22)%0A%09%7D%0A%7D%0A%0A\n+    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A// \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-15_16-55-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tif a == b {\n\t\tfmt.Println(\"Empate\")\n\t\treturn\n\t}\n\n\t// Dist\u00e2ncia de A para B no c\u00edrculo de 15 elementos\n\tdist := (b - a + 15) % 15\n\n\tif dist >= 1 && dist <= 7 {\n\t\tfmt.Println(\"Jogador 1\")\n\t} else {\n\t\tfmt.Println(\"Jogador 2\")\n\t}\n}\n\n\n//     import \"fmt\"\n//     func main() {    \n//     x := 0\n//     for { //lop infinito \n//     x += 1\n//     if x > 10 {\n//     break //sai fora\n//     }\n//     fmt.Println(x)\n// }\n",
+            "lines": "36"
         }
     ]
 }

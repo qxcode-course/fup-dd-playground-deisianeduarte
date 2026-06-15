@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-06-10_14-18-44",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,151 +37,39 @@\n ) %7B%0A\n-var a, b int%0Afmt.Scan(&a, &b)%0A    fmt.Println(a + b)%0A    fmt.Println(a - b)%0A    fmt.Println(a * b)%0A    fmt.Println(a / b)%0A    fmt.Println(a %25 b\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-10_14-22-32",
+            "content": "@@ -149,17 +149,11 @@\n rint\n-f(%22%25d%5Cn%22,\n+ln(\n a / \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-23-33",
+            "content": "@@ -153,9 +153,8 @@\n f(%22%25\n-2\n d%5Cn%22\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-23-56",
+            "content": "@@ -155,17 +155,16 @@\n %22%252d%5Cn%22,\n- \n a / b)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-24-17",
+            "content": "@@ -150,17 +150,17 @@\n intf(%22%252\n-f\n+d\n %5Cn%22, a /\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-24-39",
+            "content": "@@ -154,9 +154,9 @@\n (%22%252\n-d\n+f\n %5Cn%22,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-24-56",
+            "content": "@@ -46,15 +46,11 @@\n , b \n-float64\n+int\n %0Afmt\n@@ -146,25 +146,25 @@\n t.Printf(%22%252\n-f\n+d\n %5Cn%22, a / b)%0A\n@@ -180,19 +180,11 @@\n rint\n-f(%22%252f%5Cn%22, \n+ln(\n a %25 \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-26-17",
+            "content": "@@ -158,9 +158,9 @@\n (%22%252\n-d\n+f\n %5Cn%22,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-26-44",
+            "content": "@@ -167,10 +167,41 @@\n  a / b)%0A\n+    fmt.Printf(%22%252f%5Cn%22, a %25 b)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-10_14-26-51",
+            "content": "@@ -42,19 +42,23 @@\n ar a, b \n-int\n+float64\n %0Afmt.Sca\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-10_14-27-14",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,16 @@\n ain() %7B%0A\n-%09\n var a, b\n@@ -46,17 +46,16 @@\n , b int%0A\n-%09\n fmt.Scan\n@@ -63,17 +63,20 @@\n &a, &b)%0A\n-%09\n+    \n fmt.Prin\n@@ -82,25 +82,28 @@\n ntln(a + b)%0A\n-%09\n+    \n fmt.Println(\n@@ -105,25 +105,28 @@\n ntln(a - b)%0A\n-%09\n+    \n fmt.Println(\n@@ -132,17 +132,20 @@\n (a * b)%0A\n-%09\n+    \n fmt.Prin\n@@ -153,55 +153,18 @@\n f(%22%25\n-.2f\n+2d\n %5Cn%22, \n-float64(a)/float64(b))%0A%09fmt.Println(a %25\n+a /\n  b)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-10_14-30-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\tfmt.Println(a + b)\n\tfmt.Println(a - b)\n\tfmt.Println(a * b)\n\tfmt.Printf(\"%.2f\\n\", float64(a)/float64(b))\n\tfmt.Println(a % b)\n}\n",
+            "lines": "13"
         }
     ]
 }

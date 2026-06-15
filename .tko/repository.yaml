@@ -19,16 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@base
-- fup@if1
-- sandbox@sandbox
+- fup@if2
 - fup@list
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@operacoes
-selected_index: 16
+selected: fup@bundona
+selected_index: 31

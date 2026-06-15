@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-04-19_18-50-13",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, T int\n    fmt.Scan(&B)\n    fmt.Scan(&T)\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,28 +37,29 @@\n ) %7B%0A\n-%09\n+    \n var \n-b, t float64%0A%0A%09\n+B, T int%0A    \n fmt.\n@@ -68,12 +68,15 @@\n an(&\n-b)%0A%09\n+B)%0A    \n fmt.\n@@ -85,274 +85,42 @@\n an(&\n-t)%0A%0A%09// %C3%81rea da parte esquerda (trap%C3%A9zio)%0A%09areaEsquerda := ((b + t) * 70) / 2%0A%0A%09// Metade da %C3%A1rea total da nota%0A%09metade := (160 * 70) / 2.0%0A%0A%09if areaEsquerda %3E metade %7B%0A%09%09fmt.Println(1)%0A%09%7D else if areaEsquerda %3C metade %7B%0A%09%09fmt.Println(2)%0A%09%7D else %7B%0A%09%09fmt.Println(0)%0A%09%7D\n+T)%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-06-15_16-35-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar b, t float64\n\n\tfmt.Scan(&b)\n\tfmt.Scan(&t)\n\n\t// \u00c1rea da parte esquerda (trap\u00e9zio)\n\tareaEsquerda := ((b + t) * 70) / 2\n\n\t// Metade da \u00e1rea total da nota\n\tmetade := (160 * 70) / 2.0\n\n\tif areaEsquerda > metade {\n\t\tfmt.Println(1)\n\t} else if areaEsquerda < metade {\n\t\tfmt.Println(2)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "24"
         }
     ]
 }

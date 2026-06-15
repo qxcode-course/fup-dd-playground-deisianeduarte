@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-30_17-31-48",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc floor(x float64) int {\n\ti := int(x)\n\tif x < 0 && x != float64(i) {\n\t\treturn i - 1\n\t}\n\treturn i\n}\n\nfunc ceil(x float64) int {\n\ti := int(x)\n\tif x > 0 && x != float64(i) {\n\t\treturn i + 1\n\t}\n\treturn i\n}\n\nfunc round(x float64) int {\n\ti := int(x)\n\tif x >= 0 {\n\t\tif x-float64(i) >= 0.5 {\n\t\t\treturn i + 1\n\t\t}\n\t\treturn i\n\t}\n\tif float64(i)-x > 0.5 {\n\t\treturn i - 1\n\t}\n\treturn i\n}\n\nfunc main() {\n\tvar op byte\n\tvar x float64\n\n\tfmt.Scanf(\"%c %f\", &op, &x)\n\n\tif op == 'f' {\n\t\tfmt.Println(floor(x))\n\t} else if op == 'c' {\n\t\tfmt.Println(ceil(x))\n\t} else {\n\t\tfmt.Println(round(x))\n\t}\n}\n\n\n// x = numero quebrado\n// i = numero inteiro \n",
+            "content": "@@ -24,23 +24,8 @@\n mt%22%0A\n-import %22math%22%0A%0A\n %0Afun\n@@ -259,33 +259,146 @@\n  %7B%0A%09\n-return int(math.Round(x))\n+i := int(x)%0A%09if x %3E= 0 %7B%0A%09%09if x-float64(i) %3E= 0.5 %7B%0A%09%09%09return i + 1%0A%09%09%7D%0A%09%09return i%0A%09%7D%0A%09if float64(i)-x %3E 0.5 %7B%0A%09%09return i - 1%0A%09%7D%0A%09return i\n %0A%7D%0A%0A\n@@ -596,16 +596,17 @@\n )%0A%09%7D%0A%7D%0A%0A\n+%0A\n // x = n\n@@ -620,16 +620,16 @@\n uebrado%0A\n-\n // i = n\n@@ -641,9 +641,10 @@\n  inteiro\n+ \n %0A\n",
             "lines": "52"
+        },
+        {
+            "label": "2026-06-10_14-42-49",
+            "content": "@@ -18,26 +18,28 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-%09\n+import \n %22math%22%0A\n-)\n %0A%0Afu\n@@ -325,14 +325,12 @@\n  op \n-string\n+byte\n %0A%09va\n@@ -355,17 +355,17 @@\n Scanf(%22%25\n-s\n+c\n  %25f%22, &o\n@@ -386,11 +386,11 @@\n  == \n-%22f%22\n+'f'\n  %7B%0A%09\n@@ -433,11 +433,11 @@\n  == \n-%22c%22\n+'c'\n  %7B%0A%09\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-10_14-44-57",
+            "content": "@@ -18,13 +18,26 @@\n ort \n+(%0A%09\n %22fmt%22\n+%0A%09%22math%22%0A)\n %0A%0Afu\n@@ -45,19 +45,17 @@\n c floor(\n-num\n+x\n  float64\n@@ -67,65 +67,36 @@\n  %7B%0A%09\n-return int(num)%0A%7D%0A%0Afunc ceil(num float64) int %7B%0A%09if num =\n+i := int(x)%0A%09if x %3C 0 && x !\n = fl\n@@ -102,23 +102,16 @@\n loat64(i\n-nt(num)\n ) %7B%0A%09%09re\n@@ -116,23 +116,20 @@\n return i\n-nt(num)\n+ - 1\n %0A%09%7D%0A%09ret\n@@ -137,208 +137,168 @@\n rn i\n-nt(num) + 1%0A%7D%0A%0Afunc round(num float64) int %7B%0A%09parteInteira := int(num)%0A%09parteFracionaria := num - float64(parteInteira)%0A%0A%09if parteFracionaria %3E= 0.5 %7B%0A%09%09return parteInteira + 1%0A%09%7D%0A%09return parteInteira\n+%0A%7D%0A%0Afunc ceil(x float64) int %7B%0A%09i := int(x)%0A%09if x %3E 0 && x != float64(i) %7B%0A%09%09return i + 1%0A%09%7D%0A%09return i%0A%7D%0A%0Afunc round(x float64) int %7B%0A%09return int(math.Round(x))\n %0A%7D%0A%0A\n@@ -331,19 +331,17 @@\n ng%0A%09var \n-num\n+x\n  float64\n@@ -355,127 +355,124 @@\n Scan\n-(&op)%0A%09fmt.Scan(&num)%0A%0A%09switch op %7B%0A%09case %22c%22:%0A%09%09fmt.Println(ceil(num))%0A%09case %22f%22:%0A%09%09fmt.Println(floor(num))%0A%09case %22r%22:\n+f(%22%25s %25f%22, &op, &x)%0A%0A%09if op == %22f%22 %7B%0A%09%09fmt.Println(floor(x))%0A%09%7D else if op == %22c%22 %7B%0A%09%09fmt.Println(ceil(x))%0A%09%7D else %7B\n %0A%09%09f\n@@ -492,15 +492,13 @@\n und(\n-num\n+x\n ))%0A%09%7D%0A%7D%0A\n@@ -497,8 +497,54 @@\n ))%0A%09%7D%0A%7D%0A\n+%0A// x = numero quebrado%0A// i = numero inteiro%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-15_16-28-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc floor(num float64) int {\n\treturn int(num)\n}\n\nfunc ceil(num float64) int {\n\tif num == float64(int(num)) {\n\t\treturn int(num)\n\t}\n\treturn int(num) + 1\n}\n\nfunc round(num float64) int {\n\tparteInteira := int(num)\n\tparteFracionaria := num - float64(parteInteira)\n\n\tif parteFracionaria >= 0.5 {\n\t\treturn parteInteira + 1\n\t}\n\treturn parteInteira\n}\n\nfunc main() {\n\tvar op string\n\tvar num float64\n\n\tfmt.Scan(&op)\n\tfmt.Scan(&num)\n\n\tswitch op {\n\tcase \"c\":\n\t\tfmt.Println(ceil(num))\n\tcase \"f\":\n\t\tfmt.Println(floor(num))\n\tcase \"r\":\n\t\tfmt.Println(round(num))\n\t}\n}\n",
+            "lines": "41"
         }
     ]
 }

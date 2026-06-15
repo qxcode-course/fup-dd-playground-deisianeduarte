@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-04-19_19-08-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,285 +37,39 @@\n ) %7B%0A\n-%09var n, x, y, s int%0A%09var c string%0A%0A%09fmt.Scan(&n)%0A%09fmt.Scan(&x)%0A%09fmt.Scan(&y)%0A%09fmt.Scan(&c)%0A%09fmt.Scan(&s)%0A%0A%09switch c %7B%0A%09case %22R%22:%0A%09%09x = (x + s) %25 n%0A%09case %22L%22:%0A%09%09x = (x - s%25n + n) %25 n%0A%09case %22D%22:%0A%09%09y = (y + s) %25 n%0A%09case %22U%22:%0A%09%09y = (y - s%25n + n) %25 n%0A%09%7D%0A%0A%09fmt.Printf(%22%25d %25d%5Cn%22, x, y\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-38-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\n\tfmt.Scan(&n)\n\tfmt.Scan(&x)\n\tfmt.Scan(&y)\n\tfmt.Scan(&c)\n\tfmt.Scan(&s)\n\n\tswitch c {\n\tcase \"R\":\n\t\tx = (x + s) % n\n\tcase \"L\":\n\t\tx = (x - s%n + n) % n\n\tcase \"D\":\n\t\ty = (y + s) % n\n\tcase \"U\":\n\t\ty = (y - s%n + n) % n\n\t}\n\n\tfmt.Printf(\"%d %d\\n\", x, y)\n}\n",
+            "lines": "27"
         }
     ]
 }

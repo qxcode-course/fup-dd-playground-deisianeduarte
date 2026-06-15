@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_16-48-08",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,160 +37,39 @@\n ) %7B%0A\n-%09var a, b int%0A%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09if (a%253 == 0 && b%253 == 0) %7C%7C (a%255 == 0 && b%255 == 0) %7B%0A%09%09fmt.Println(%22sim%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22nao%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-50-07",
+            "content": "@@ -44,12 +44,12 @@\n var \n-l, c\n+a, b\n  int\n@@ -61,17 +61,17 @@\n t.Scan(&\n-l\n+a\n )%0A%09fmt.S\n@@ -79,17 +79,17 @@\n an(&\n-c\n+b\n )%0A%0A%09if (\n l+c)\n@@ -88,19 +88,55 @@\n if (\n-l+c)%252\n+a%253 == 0 && b%253 == 0) %7C%7C (a%255 == 0 && b%255\n  == 0\n+)\n  %7B%0A%09\n@@ -152,20 +152,14 @@\n tln(\n-1) // branca\n+%22sim%22)\n %0A%09%7D \n@@ -183,19 +183,14 @@\n tln(\n-0) // preta\n+%22nao%22)\n %0A%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-15_16-50-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar l, c int\n\n\tfmt.Scan(&l)\n\tfmt.Scan(&c)\n\n\tif (l+c)%2 == 0 {\n\t\tfmt.Println(1) // branca\n\t} else {\n\t\tfmt.Println(0) // preta\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

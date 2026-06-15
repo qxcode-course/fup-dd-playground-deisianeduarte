@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_16-42-01",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,329 +37,39 @@\n ) %7B%0A\n-%09var j1, j2, j3 int%0A%0A%09fmt.Scan(&j1)%0A%09fmt.Scan(&j2)%0A%09fmt.Scan(&j3)%0A%0A%09if j1 == j2 && j2 == j3 %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D else if j1 != j2 && j1 != j3 %7B%0A%09%09fmt.Println(%22jog1%22)%0A%09%7D else if j2 != j1 && j2 != j3 %7B%0A%09%09fmt.Println(%22jog2%22)%0A%09%7D else if j3 != j1 && j3 != j2 %7B%0A%09%09fmt.Println(%22jog3%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-46-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar j1, j2, j3 int\n\n\tfmt.Scan(&j1)\n\tfmt.Scan(&j2)\n\tfmt.Scan(&j3)\n\n\tif j1 == j2 && j2 == j3 {\n\t\tfmt.Println(\"empate\")\n\t} else if j1 != j2 && j1 != j3 {\n\t\tfmt.Println(\"jog1\")\n\t} else if j2 != j1 && j2 != j3 {\n\t\tfmt.Println(\"jog2\")\n\t} else if j3 != j1 && j3 != j2 {\n\t\tfmt.Println(\"jog3\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "23"
+        }
+    ]
+}

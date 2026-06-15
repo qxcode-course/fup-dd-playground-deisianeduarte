@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_16-24-10",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,266 +37,39 @@\n ) %7B%0A\n-%09var velocidade, tempoMinutos, consumo float64%0A%0A%09fmt.Scan(&velocidade)%0A%09fmt.Scan(&tempoMinutos)%0A%09fmt.Scan(&consumo)%0A%0A%09tempoHoras := tempoMinutos / 60.0%0A%09distancia := velocidade * tempoHoras%0A%09desempenho := distancia / consumo%0A%0A%09fmt.Printf(%22%25.2f%5Cn%22, desempenho\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_16-26-40",
+            "content": "\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar velocidade, tempoMinutos, consumo float64\n\n\tfmt.Scan(&velocidade)\n\tfmt.Scan(&tempoMinutos)\n\tfmt.Scan(&consumo)\n\n\ttempoHoras := tempoMinutos / 60.0\n\tdistancia := velocidade * tempoHoras\n\tdesempenho := distancia / consumo\n\n\tfmt.Printf(\"%.2f\\n\", desempenho)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

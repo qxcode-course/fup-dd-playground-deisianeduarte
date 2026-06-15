@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_16-59-56",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,388 +37,39 @@\n ) %7B%0A\n-%09var h, m, d int%0A%09var s string%0A%0A%09fmt.Scan(&h)%0A%09fmt.Scan(&m)%0A%09fmt.Scan(&s)%0A%09fmt.Scan(&d)%0A%0A%09// Cada cm equivale a 10 minutos%0A%09posicao := h*60 + m%0A%0A%09if s == %22H%22 %7B%0A%09%09posicao += d * 10%0A%09%7D else %7B%0A%09%09posicao -= d * 10%0A%09%7D%0A%0A%09// Rel%C3%B3gio de 12 horas = 720 minutos%0A%09posicao = ((posicao %25 720) + 720) %25 720%0A%0A%09hora := posicao / 60%0A%09minuto := posicao %25 60%0A%0A%09fmt.Printf(%22%2502d %2502d%5Cn%22, hora, minuto\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_17-00-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar h, m, d int\n\tvar s string\n\n\tfmt.Scan(&h)\n\tfmt.Scan(&m)\n\tfmt.Scan(&s)\n\tfmt.Scan(&d)\n\n\t// Cada cm equivale a 10 minutos\n\tposicao := h*60 + m\n\n\tif s == \"H\" {\n\t\tposicao += d * 10\n\t} else {\n\t\tposicao -= d * 10\n\t}\n\n\t// Rel\u00f3gio de 12 horas = 720 minutos\n\tposicao = ((posicao % 720) + 720) % 720\n\n\thora := posicao / 60\n\tminuto := posicao % 60\n\n\tfmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}\n",
+            "lines": "30"
+        }
+    ]
+}
