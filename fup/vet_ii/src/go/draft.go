@@ -1,4 +1,4 @@
-package main
+/*package main
 import "fmt"
 func main() {
     var n int
@@ -17,4 +17,25 @@ func main() {
         fmt.Println( valor)
     }
     fmt.Print("]\n")
+} */
+
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+
+	vetor := make([]int, n)
+
+	for i := 0; i < n; i++ {
+		fmt.Scan(&vetor[i])
+	}
+
+	fmt.Print("[ ")
+	for i := 0; i < n; i++ {
+		fmt.Printf("%d ", vetor[i])
+	}
+	fmt.Println("]")
 }

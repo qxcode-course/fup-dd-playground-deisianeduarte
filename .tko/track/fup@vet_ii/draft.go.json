@@ -17,8 +17,13 @@
         },
         {
             "label": "2026-06-09_17-47-30",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    if n == 0 {\n        fmt.Println()\n    }\n    arr := make([]int, n)\n    fmt.Print(\"[\")\n    for i := 0; i < n; i++ {\n        fmt.Scan(&arr[i])\n    }\n\n    for _, valor := range arr {\n        fmt.Println( valor)\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "content": "@@ -1,6 +1,4 @@\n-/*\n pack\n@@ -307,252 +307,6 @@\n n%22)%0A\n-%7D */%0A%0Apackage main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09vetor := make(%5B%5Dint, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&vetor%5Bi%5D)%0A%09%7D%0A%0A%09fmt.Print(%22%5B %22)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Printf(%22%25d %22, vetor%5Bi%5D)%0A%09%7D%0A%09fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
             "lines": "20"
+        },
+        {
+            "label": "2026-06-16_12-54-05",
+            "content": "/*package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    if n == 0 {\n        fmt.Println()\n    }\n    arr := make([]int, n)\n    fmt.Print(\"[\")\n    for i := 0; i < n; i++ {\n        fmt.Scan(&arr[i])\n    }\n\n    for _, valor := range arr {\n        fmt.Println( valor)\n    }\n    fmt.Print(\"]\\n\")\n} */\n\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvetor := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Printf(\"%d \", vetor[i])\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "41"
         }
     ]
 }

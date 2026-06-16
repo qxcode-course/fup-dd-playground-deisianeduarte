@@ -1,20 +1,20 @@
 package main
+
 import "fmt"
+
 func main() {
+	var n int
+	fmt.Scan(&n)
 
+	soma := 0
 
-    qtd := 0 
-    fmt.Scan(&qtd)
-    arr := make([]float64, qtd)
+	for i := 0; i < n; i++ {
+		var calorias int
+		fmt.Scan(&calorias)
+		soma += calorias
+	}
 
+	media := float64(soma) / float64(n)
 
-     media(arr []float64) float64 {
-    soma := 0.0
-    for i 
-     }
-}
-func main() {
-arr := CriarEPreencherVetor()
-fmt.Println(media(arr))
-
+	fmt.Printf("%.1f\n", media)
 }

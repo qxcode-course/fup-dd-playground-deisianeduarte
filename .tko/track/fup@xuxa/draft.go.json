@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_13-10-10",
+            "content": "@@ -10,359 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%09texto, _ := reader.ReadString('%5Cn')%0A%0A%09// Remove o '%5Cn' se existir%0A%09if len(texto) %3E 0 && texto%5Blen(texto)-1%5D == '%5Cn' %7B%0A%09%09texto = texto%5B:len(texto)-1%5D%0A%09%7D%0A%0A%09runes := %5B%5Drune(texto)%0A%0A%09for i := len(runes) - 1; i %3E= 0; i-- %7B%0A%09%09fmt.Print(string(runes%5Bi%5D))%0A%09%7D%0A%09fmt.Println(\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_13-11-34",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\ttexto, _ := reader.ReadString('\\n')\n\n\t// Remove o '\\n' se existir\n\tif len(texto) > 0 && texto[len(texto)-1] == '\\n' {\n\t\ttexto = texto[:len(texto)-1]\n\t}\n\n\trunes := []rune(texto)\n\n\tfor i := len(runes) - 1; i >= 0; i-- {\n\t\tfmt.Print(string(runes[i]))\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-49-27",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,300 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09fator := 2%0A%09contagem := 0%0A%0A%09for n != 1 %7B%0A%09%09if n%25fator == 0 %7B%0A%09%09%09n /= fator%0A%09%09%09contagem++%0A%09%09%7D else %7B%0A%09%09%09if contagem %3E 0 %7B%0A%09%09%09%09fmt.Printf(%22%25d %25d%5Cn%22, fator, contagem)%0A%09%09%09%7D%0A%09%09%09fator++%0A%09%09%09contagem = 0%0A%09%09%7D%0A%09%7D%0A%0A%09if contagem %3E 0 %7B%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, fator, contagem)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-50-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfator := 2\n\tcontagem := 0\n\n\tfor n != 1 {\n\t\tif n%fator == 0 {\n\t\t\tn /= fator\n\t\t\tcontagem++\n\t\t} else {\n\t\t\tif contagem > 0 {\n\t\t\t\tfmt.Printf(\"%d %d\\n\", fator, contagem)\n\t\t\t}\n\t\t\tfator++\n\t\t\tcontagem = 0\n\t\t}\n\t}\n\n\tif contagem > 0 {\n\t\tfmt.Printf(\"%d %d\\n\", fator, contagem)\n\t}\n}\n",
+            "lines": "28"
+        }
+    ]
+}

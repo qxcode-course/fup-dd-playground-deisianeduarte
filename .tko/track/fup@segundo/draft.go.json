@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-26-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,184 +37,39 @@\n ) %7B%0A\n-%09var h, m, s int%0A%0A%09fmt.Scan(&h, &m, &s)%0A%0A%09s++%0A%0A%09if s == 60 %7B%0A%09%09s = 0%0A%09%09m++%0A%09%7D%0A%0A%09if m == 60 %7B%0A%09%09m = 0%0A%09%09h++%0A%09%7D%0A%0A%09if h == 24 %7B%0A%09%09h = 0%0A%09%7D%0A%0A%09fmt.Printf(%22%2502d %2502d %2502d%5Cn%22, h, m, s\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-28-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar h, m, s int\n\n\tfmt.Scan(&h, &m, &s)\n\n\ts++\n\n\tif s == 60 {\n\t\ts = 0\n\t\tm++\n\t}\n\n\tif m == 60 {\n\t\tm = 0\n\t\th++\n\t}\n\n\tif h == 24 {\n\t\th = 0\n\t}\n\n\tfmt.Printf(\"%02d %02d %02d\\n\", h, m, s)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-05-18_17-33-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,111 +41,35 @@\n     \n-var a, b, c, d int%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    fmt.Scan(&c)%0A    fmt.Scan(&d)%0A    a == %0A    if \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-16-18",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,51 +37,35 @@\n ) %7B%0A\n-%09var r1, r2, r3, r4 string%0A%09acertos := 0%0A%0A%09\n+    var a, b, c, d int%0A    \n fmt.\n@@ -74,13 +74,15 @@\n an(&\n-r1)%0A%09\n+a)%0A    \n fmt.\n@@ -91,13 +91,15 @@\n an(&\n-r2)%0A%09\n+b)%0A    \n fmt.\n@@ -108,13 +108,15 @@\n an(&\n-r3)%0A%09\n+c)%0A    \n fmt.\n@@ -125,352 +125,27 @@\n an(&\n-r4)%0A%0A%09if r1 == %22d%22 %7B%0A%09%09acertos++%0A%09%7D%0A%09if r2 == %22a%22 %7B%0A%09%09acertos++%0A%09%7D%0A%09if r3 == %22c%22 %7B%0A%09%09acertos++%0A%09%7D%0A%09if r4 == %22d%22 %7B%0A%09%09acertos++%0A%09%7D%0A%0A%09switch acertos %7B%0A%09case 0:%0A%09%09fmt.Println(%22Nunca assistiu%22)%0A%09case 1:%0A%09%09fmt.Println(%22Ja ouviu falar%22)%0A%09case 2:%0A%09%09fmt.Println(%22Interessado no assunto%22)%0A%09case 3:%0A%09%09fmt.Println(%22Fa%22)%0A%09case 4:%0A%09%09fmt.Println(%22Super Fa%22)%0A%09%7D\n+d)%0A    a == %0A    if \n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-16_12-18-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar r1, r2, r3, r4 string\n\tacertos := 0\n\n\tfmt.Scan(&r1)\n\tfmt.Scan(&r2)\n\tfmt.Scan(&r3)\n\tfmt.Scan(&r4)\n\n\tif r1 == \"d\" {\n\t\tacertos++\n\t}\n\tif r2 == \"a\" {\n\t\tacertos++\n\t}\n\tif r3 == \"c\" {\n\t\tacertos++\n\t}\n\tif r4 == \"d\" {\n\t\tacertos++\n\t}\n\n\tswitch acertos {\n\tcase 0:\n\t\tfmt.Println(\"Nunca assistiu\")\n\tcase 1:\n\t\tfmt.Println(\"Ja ouviu falar\")\n\tcase 2:\n\t\tfmt.Println(\"Interessado no assunto\")\n\tcase 3:\n\t\tfmt.Println(\"Fa\")\n\tcase 4:\n\t\tfmt.Println(\"Super Fa\")\n\t}\n}\n",
+            "lines": "39"
         }
     ]
 }

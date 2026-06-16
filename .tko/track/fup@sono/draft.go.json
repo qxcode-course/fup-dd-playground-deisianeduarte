@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-33-47",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,391 +37,39 @@\n ) %7B%0A\n-%09var h1, m1, s1 int%0A%09var h2, m2, s2 int%0A%0A%09fmt.Scan(&h1, &m1, &s1)%0A%09fmt.Scan(&h2, &m2, &s2)%0A%0A%09inicio := h1*3600 + m1*60 + s1%0A%09fim := h2*3600 + m2*60 + s2%0A%0A%09if fim %3C inicio %7B%0A%09%09fim += 24 * 3600%0A%09%7D%0A%0A%09diferenca := fim - inicio%0A%0A%09horas := diferenca / 3600%0A%09diferenca %25= 3600%0A%0A%09minutos := diferenca / 60%0A%09segundos := diferenca %25 60%0A%0A%09fmt.Printf(%22%2502d %2502d %2502d%5Cn%22, horas, minutos, segundos\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-35-01",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar h1, m1, s1 int\n\tvar h2, m2, s2 int\n\n\tfmt.Scan(&h1, &m1, &s1)\n\tfmt.Scan(&h2, &m2, &s2)\n\n\tinicio := h1*3600 + m1*60 + s1\n\tfim := h2*3600 + m2*60 + s2\n\n\tif fim < inicio {\n\t\tfim += 24 * 3600\n\t}\n\n\tdiferenca := fim - inicio\n\n\thoras := diferenca / 3600\n\tdiferenca %= 3600\n\n\tminutos := diferenca / 60\n\tsegundos := diferenca % 60\n\n\tfmt.Printf(\"%02d %02d %02d\\n\", horas, minutos, segundos)\n}\n",
+            "lines": "28"
+        }
+    ]
+}

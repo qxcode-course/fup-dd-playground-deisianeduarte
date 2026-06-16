@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-24-34",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,398 +37,39 @@\n ) %7B%0A\n-%09var tipo string%0A%09var forca int%0A%0A%09fmt.Scan(&tipo)%0A%09fmt.Scan(&forca)%0A%0A%09var t int%0A%0A%09if tipo == %22b%22 %7B%0A%09%09t = 20%0A%09%7D else %7B // tipo == %22c%22%0A%09%09t = 18%0A%09%7D%0A%0A%09poder := ((forca * t) - 80) / 10%0A%0A%09if poder %3C 150 %7B%0A%09%09fmt.Println(%22Fraco, nem passou%22)%0A%09%7D else if poder %3C 180 %7B%0A%09%09fmt.Println(%22Perfeito%22)%0A%09%7D else if poder %3C= 210 %7B%0A%09%09fmt.Println(%22Satisfeito%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22Muito forte, bola fora%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-26-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar tipo string\n\tvar forca int\n\n\tfmt.Scan(&tipo)\n\tfmt.Scan(&forca)\n\n\tvar t int\n\n\tif tipo == \"b\" {\n\t\tt = 20\n\t} else { // tipo == \"c\"\n\t\tt = 18\n\t}\n\n\tpoder := ((forca * t) - 80) / 10\n\n\tif poder < 150 {\n\t\tfmt.Println(\"Fraco, nem passou\")\n\t} else if poder < 180 {\n\t\tfmt.Println(\"Perfeito\")\n\t} else if poder <= 210 {\n\t\tfmt.Println(\"Satisfeito\")\n\t} else {\n\t\tfmt.Println(\"Muito forte, bola fora\")\n\t}\n}\n",
+            "lines": "31"
+        }
+    ]
+}

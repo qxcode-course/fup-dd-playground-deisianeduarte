@@ -183,3 +183,5 @@
 2026-06-15 17:58:53, EXEC, v:1, k:fup@bundona, mode:FULL, rate:85
 2026-06-15 17:58:55, EXEC, v:1, k:fup@bundona, mode:FULL, rate:85
 2026-06-15 17:58:56, EXEC, v:1, k:fup@bundona, mode:FULL, rate:85
+2026-06-15 18:00:58, MOVE, v:1, k:fup@bundona, mode:BACK
+2026-06-15 17:58:56, MOVE, v:1, k:fup@bundona, mode:EDIT

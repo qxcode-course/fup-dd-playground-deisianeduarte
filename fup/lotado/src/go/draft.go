@@ -1,4 +1,4 @@
-package main
+/*package main
 import "fmt"
 func main() {
     var c, m int
@@ -27,4 +27,34 @@ func main() {
         }
     
 
+}*/
+
+package main
+
+import "fmt"
+
+func main() {
+	var c, m int
+	passageiros := 0
+
+	fmt.Scan(&c)
+
+	for {
+		if _, err := fmt.Scan(&m); err != nil {
+			break
+		}
+
+		passageiros += m
+
+		if passageiros >= 2*c {
+			fmt.Println("hora de partir")
+			break
+		} else if passageiros == 0 {
+			fmt.Println("vazio")
+		} else if passageiros < c {
+			fmt.Println("ainda cabe")
+		} else {
+			fmt.Println("lotado")
+		}
+	}
 }

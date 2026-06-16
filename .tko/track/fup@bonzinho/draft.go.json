@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-18-34",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,354 +37,39 @@\n ) %7B%0A\n-%09var p1, p2, p3, trabalho float64%0A%0A%09fmt.Scan(&p1)%0A%09fmt.Scan(&p2)%0A%09fmt.Scan(&p3)%0A%09fmt.Scan(&trabalho)%0A%0A%09menor := p1%0A%09if p2 %3C menor %7B%0A%09%09menor = p2%0A%09%7D%0A%09if p3 %3C menor %7B%0A%09%09menor = p3%0A%09%7D%0A%0A%09media := (p1 + p2 + p3 - menor + trabalho) / 3.0%0A%0A%09if media %3E= 7.0 %7B%0A%09%09fmt.Printf(%22Aprovado com %25.1f%5Cn%22, media)%0A%09%7D else %7B%0A%09%09fmt.Printf(%22Final com %25.1f%5Cn%22, media)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-23-02",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-16_12-23-44",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\tvar p1, p2, p3, trabalho float64\n\n\tfmt.Scan(&p1)\n\tfmt.Scan(&p2)\n\tfmt.Scan(&p3)\n\tfmt.Scan(&trabalho)\n\n\tmenor := p1\n\tif p2 < menor {\n\t\tmenor = p2\n\t}\n\tif p3 < menor {\n\t\tmenor = p3\n\t}\n\n\tmedia := (p1 + p2 + p3 - menor + trabalho) / 3.0\n\n\tif media >= 7.0 {\n\t\tfmt.Printf(\"Aprovado com %.1f\\n\", media)\n\t} else {\n\t\tfmt.Printf(\"Final com %.1f\\n\", media)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_12-45-43",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,208 +37,39 @@\n ) %7B%0A\n-%09var P, S, E int%0A%0A%09fmt.Scan(&P)%0A%09fmt.Scan(&S)%0A%09fmt.Scan(&E)%0A%0A%09pos := 0%0A%0A%09for %7B%0A%09%09if pos+S %3E= P %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, pos)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, pos, pos+S)%0A%09%09pos = pos + S - E%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_12-48-25",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\n\tfmt.Scan(&P)\n\tfmt.Scan(&S)\n\tfmt.Scan(&E)\n\n\tpos := 0\n\n\tfor {\n\t\tif pos+S >= P {\n\t\t\tfmt.Printf(\"%d saiu\\n\", pos)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", pos, pos+S)\n\t\tpos = pos + S - E\n\t}\n}\n",
+            "lines": "23"
+        }
+    ]
+}
