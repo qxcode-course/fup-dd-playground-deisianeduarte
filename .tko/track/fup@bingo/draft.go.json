@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_17-25-10",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,20 +19,16 @@\n t %22fmt%22%0A\n-%0A// \n func mai\n@@ -37,480 +37,39 @@\n ) %7B%0A\n-//     matriz := make(%5B%5D%5B%5Dint, 0)%0A//     matriz = append(matriz, make(%5B%5Dint, 4))%0A//     matriz = append(matriz, make(%5B%5Dint, 4))%0A//     matriz = append(matriz, make(%5B%5Dint, 4))%0A%0A//     for _, fila := range matriz %7B%0A//         fmt.Println(i, fila)%0A//     %7D%0A// %7D%0A%0Afunc main() %7B%0A    var matriz %5B%5D%5B%5Dint%7B%0A        %7B1, 9, 27, 23%7D,%0A        %7B34, 20, 37, 47%7D,%0A        %7B30, 87, 55, 69%7D,%0A        %7B13, 60, 99, 66%7D,%0A    %7D%0A    for _, linha := range matriz %7B%0A        fmt.Println(linha)%0A    %7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_17-33-41",
+            "content": "package main\n\nimport \"fmt\"\n\n// func main() {\n//     matriz := make([][]int, 0)\n//     matriz = append(matriz, make([]int, 4))\n//     matriz = append(matriz, make([]int, 4))\n//     matriz = append(matriz, make([]int, 4))\n\n//     for _, fila := range matriz {\n//         fmt.Println(i, fila)\n//     }\n// }\n\nfunc main() {\n    var matriz [][]int{\n        {1, 9, 27, 23},\n        {34, 20, 37, 47},\n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n    for _, linha := range matriz {\n        fmt.Println(linha)\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

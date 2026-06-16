@@ -7,8 +7,18 @@
         },
         {
             "label": "2026-06-16_13-11-34",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\ttexto, _ := reader.ReadString('\\n')\n\n\t// Remove o '\\n' se existir\n\tif len(texto) > 0 && texto[len(texto)-1] == '\\n' {\n\t\ttexto = texto[:len(texto)-1]\n\t}\n\n\trunes := []rune(texto)\n\n\tfor i := len(runes) - 1; i >= 0; i-- {\n\t\tfmt.Print(string(runes[i]))\n\t}\n\tfmt.Println()\n}\n",
+            "content": "@@ -130,16 +130,45 @@\n ('%5Cn')%0A%0A\n+%09// Remove o '%5Cn' se existir%0A\n %09if len(\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-06-16_16-58-19",
+            "content": "@@ -129,17 +129,16 @@\n g('%5Cn')%0A\n-%09\n %0A%09if len\n@@ -241,17 +241,16 @@\n (texto)%0A\n-%09\n %0A%09for i \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_16-59-09",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\ttexto, _ := reader.ReadString('\\n')\n\t\n\tif len(texto) > 0 && texto[len(texto)-1] == '\\n' {\n\t\ttexto = texto[:len(texto)-1]\n\t}\n\n\trunes := []rune(texto)\n\t\n\tfor i := len(runes) - 1; i >= 0; i-- {\n\t\tfmt.Print(string(runes[i]))\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "23"
         }
     ]
 }

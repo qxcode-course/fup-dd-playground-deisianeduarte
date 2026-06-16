@@ -10,14 +10,23 @@ func main() {
 	fmt.Scan(&E)
 
 	pos := 0
+	salto := S
 
 	for {
-		if pos+S >= P {
+		if pos+salto >= P {
 			fmt.Printf("%d saiu\n", pos)
 			break
 		}
 
-		fmt.Printf("%d %d\n", pos, pos+S)
-		pos = pos + S - E
+		fmt.Printf("%d %d\n", pos, pos+salto)
+
+		pos = pos + salto - E
+
+		salto -= 10
+
+		if pos < 0 {
+			fmt.Printf("%d morreu\n", pos)
+			break
+		}
 	}
 }

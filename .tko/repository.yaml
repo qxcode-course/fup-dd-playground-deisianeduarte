@@ -19,17 +19,24 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@base
+- fup@if1
 - fup@for1
 - fup@if2
 - fup@string
+- fup@mat
 - fup@for2
 - fup@list
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: false
+  interval_seconds: null
+audit_enabled: false
+audit_interval_seconds: null
 lang: go
-selected: fup@xuxa
-selected_index: 120
+selected: fup@imperador
+selected_index: 194
