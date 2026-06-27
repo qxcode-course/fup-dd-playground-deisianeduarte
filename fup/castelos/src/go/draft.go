@@ -4,12 +4,15 @@ func main() {
     var n int 
     fmt.Scan(&n)
 
-    i := 0
-    for i*i < n {
-        i++
+    contador := 0
+    
+    for i := 1; i <= n; i++ {
+        if i*i == n {
+            contador++
+        }
     }
 
-    if i*i == n {
+    if contador > 0 {
         fmt.Println("sim")   
     } else {
         fmt.Println("nao")

@@ -17,8 +17,33 @@
         },
         {
             "label": "2026-06-27_16-04-59",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n\n    i := 0\n    for i*i < n {\n        i++\n    }\n\n    if i*i == n {\n        fmt.Println(\"sim\")   \n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "content": "@@ -70,24 +70,17 @@\n n)%0A%0A    \n-contador\n+i\n  := 0%0A  \n@@ -85,119 +85,56 @@\n     \n-%0A    for i := 0; i %3C n; i++ %7B%0A        if i*i == n %7B%0A            contador++%0A        %7D%0A    %7D%0A%0A    if contador %3E 0\n+for i*i %3C n %7B%0A        i++%0A    %7D%0A%0A    if i*i == n\n  %7B%0A \n",
             "lines": "17"
+        },
+        {
+            "label": "2026-06-27_16-13-03",
+            "content": "@@ -108,17 +108,16 @@\n = 0; i %3C\n-=\n  n; i++ \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_16-13-34",
+            "content": "@@ -198,17 +198,16 @@\n ntador %3E\n-=\n  0 %7B%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_16-14-08",
+            "content": "@@ -198,16 +198,17 @@\n ntador %3E\n+=\n  0 %7B%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_16-14-23",
+            "content": "@@ -106,9 +106,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_16-14-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n\n    contador := 0\n    \n    for i := 1; i <= n; i++ {\n        if i*i == n {\n            contador++\n        }\n    }\n\n    if contador > 0 {\n        fmt.Println(\"sim\")   \n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "20"
         }
     ]
 }
