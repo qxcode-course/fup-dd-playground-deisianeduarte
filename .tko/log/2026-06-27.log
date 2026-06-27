@@ -1,0 +1,20 @@
+2026-06-27 15:33:36, MOVE, v:1, k:fup@afogado, mode:DOWN
+2026-06-27 15:33:46, MOVE, v:1, k:fup@afogado, mode:PICK
+2026-06-27 15:34:06, EXEC, v:1, k:fup@afogado, mode:FULL, rate:0, size:5
+2026-06-27 15:33:36, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-06-27 15:34:06, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-06-27 15:46:37, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-06-27 15:51:36, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-06-27 15:54:05, EXEC, v:1, k:fup@afogado, mode:FULL, rate:100, size:34
+2026-06-27 15:54:19, MOVE, v:1, k:fup@afogado, mode:BACK
+2026-06-27 15:54:34, SELF, v:1, k:fup@afogado, self:1, rate:100, concept:1
+2026-06-27 15:54:43, MOVE, v:1, k:fup@castelos, mode:DOWN
+2026-06-27 15:54:51, MOVE, v:1, k:fup@castelos, mode:PICK
+2026-06-27 15:54:52, EXEC, v:1, k:fup@castelos, mode:FULL, rate:0, size:5
+2026-06-27 15:55:21, MOVE, v:1, k:fup@castelos, mode:PICK
+2026-06-27 15:55:45, MOVE, v:1, k:fup@castelos, mode:PICK
+2026-06-27 16:00:38, MOVE, v:1, k:fup@castelos, mode:EDIT
+2026-06-27 16:03:22, EXEC, v:1, k:fup@castelos, mode:FULL, size:15, fail:COMP
+2026-06-27 16:03:37, EXEC, v:1, k:fup@castelos, mode:FULL, size:16, fail:COMP
+2026-06-27 16:04:09, EXEC, v:1, k:fup@castelos, mode:FULL, fail:COMP
+2026-06-27 16:04:59, EXEC, v:1, k:fup@castelos, mode:FULL, rate:90, size:17

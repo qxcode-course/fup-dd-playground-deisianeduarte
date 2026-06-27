@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_15-34-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,462 +23,53 @@\n mt%22%0A\n-%0Afunc ConsegueSair(p, e, s int) bool %7B%0A    pos := 0 %0A    salto := s %0A%0A    for %7B%0A        if pos+salto %3E= p %7B%0A            return true%0A        %7D%0A%0A        pos = pos + salto - e%0A        if pos %3C 0 %7B%0A            return false%0A        %7D%0A        salto -= 10%0A    %7D%0A%7D%0Afunc main() %7B%0A    var p, e int%0A    fmt.Scan(&p)%0A    fmt.Scan(&e)%0A    %0A    s := 0%0A    for %7B%0A        if ConsegueSair(p, e, s) %7B%0A            fmt.Println(s)%0A            break%0A        %7D%0A        s++%0A    %7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_15-54-05",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc ConsegueSair(p, e, s int) bool {\n    pos := 0 \n    salto := s \n\n    for {\n        if pos+salto >= p {\n            return true\n        }\n\n        pos = pos + salto - e\n        if pos < 0 {\n            return false\n        }\n        salto -= 10\n    }\n}\nfunc main() {\n    var p, e int\n    fmt.Scan(&p)\n    fmt.Scan(&e)\n    \n    s := 0\n    for {\n        if ConsegueSair(p, e, s) {\n            fmt.Println(s)\n            break\n        }\n        s++\n    }\n}\n",
+            "lines": "34"
+        }
+    ]
+}
