@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_21-03-35",
+            "content": "@@ -17,701 +17,59 @@\n ort \n-(%0A        %22fmt%22%0A        %22io%22%0A)%0A   %0Afunc main()%7B%0A    var n int %0A%0A    for %7B%0A        _, err := fmt.Scan(&n)%0A        if err == io.EOF %7B%0A            break%0A        %7D%0A        if err != nil %7B%0A            continue%0A        %7D%0A%0A        somaSoldados := 0%0A        somaRebeldes := 0%0A%0A        for i := 0; i %3C n; i++ %7B%0A            var x int%0A            fmt.Scan(&x)%0A%0A            if x%252 == 0 %7B%0A                somaRebeldes += x%0A            %7D else %7B%0A                somaSoldados += x%0A            %7D%0A        %7D%0A    %7D%0A    %0A    if somaSoldados %3E somaRebeldes %7B%0A        fmt.Println(%22soldados%22)%0A    %7D else if somaRebeldes %3E somaSoldados %7B%0A        fmt.Println(%22rebeldes%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D \n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_21-13-55",
+            "content": "@@ -506,17 +506,22 @@\n   %7D%0A    \n-%0A\n+%7D%0A    \n %0A    if \n@@ -707,13 +707,11 @@\n )%0A    %7D%0A\n-%7D%0A\n %7D %0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-28_21-15-49",
+            "content": "package main\nimport (\n        \"fmt\"\n        \"io\"\n)\n   \nfunc main(){\n    var n int \n\n    for {\n        _, err := fmt.Scan(&n)\n        if err == io.EOF {\n            break\n        }\n        if err != nil {\n            continue\n        }\n\n        somaSoldados := 0\n        somaRebeldes := 0\n\n        for i := 0; i < n; i++ {\n            var x int\n            fmt.Scan(&x)\n\n            if x%2 == 0 {\n                somaRebeldes += x\n            } else {\n                somaSoldados += x\n            }\n        }\n    \n\n    if somaSoldados > somaRebeldes {\n        fmt.Println(\"soldados\")\n    } else if somaRebeldes > somaSoldados {\n        fmt.Println(\"rebeldes\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n} \n",
+            "lines": "42"
+        }
+    ]
+}

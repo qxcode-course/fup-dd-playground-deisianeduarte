@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_20-16-43",
+            "content": "@@ -17,1131 +17,59 @@\n ort \n-(%0A        %22fmt%22%0A        %22bufio%22%0A        %22os%22%0A        %22strconv%22%0A        %22strings%22%0A)%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Split(bufio.ScanWords)%0A%0A    for scanner.Scan() %7B%0A        totalAlbum, _ := strconv.Atoi(scanner.Text())%0A%0A        scanner.Scan()%0A        possuiQtd, _ := strconv.Atoi(scanner.Text())%0A%0A        frequencia :=  make(map%5Bint%5Dint)%0A        var repetidas %5B%5Dstring%0A%0A        for i := 0; i%3C possuiQtd; i++ %7B%0A            scanner.Scan()%0A            fig, _ := strconv.Atoi(scanner.Text())%0A            frequencia%5Bfig%5D++%0A%0A            if frequencia%5Bfig%5D %3E 1 %7B%0A                repetidas = append(repetidas, strconv.Itoa(fig))%0A            %7D%0A        %7D%0A        var faltando %5B%5Dstring%0A        for i := 1; i %3C= totalAlbum; i++ %7B%0A            if frequencia%5Bi%5D == 0 %7B%0A                faltando = append(faltando, strconv.Itoa(i))%0A            %7D%0A        %7D%0A%0A        imprimirResultado(repetidas)%0A        imprimirResultado(faltando)%0A%0A    %7D%0A%7D%0Afunc imprimirResultado(lista %5B%5Dstring) %7B%0A    if len(lista) == 0 %7B%0A        fmt.Println(%22%5B%5D%22)%0A    %7D else %7B%0A        fmt.Println(%22%5B%25s%5D%5Cn%22, strings.Join(lista, %22 %22))%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_20-38-24",
+            "content": "@@ -1059,17 +1059,16 @@\n intln(%22%5B\n- \n %5D%22)%0A    \n@@ -1102,12 +1102,10 @@\n n(%22%5B\n- \n %25s\n- \n %5D%5Cn%22\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-28_20-39-12",
+            "content": "@@ -971,17 +971,16 @@\n     %7D%0A%7D%0A\n-%0A\n func imp\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-28_20-39-38",
+            "content": "@@ -1095,17 +1095,18 @@\n mt.Print\n-f\n+ln\n (%22%5B %25s %5D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-28_20-39-58",
+            "content": "package main\nimport (\n        \"fmt\"\n        \"bufio\"\n        \"os\"\n        \"strconv\"\n        \"strings\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Split(bufio.ScanWords)\n\n    for scanner.Scan() {\n        totalAlbum, _ := strconv.Atoi(scanner.Text())\n\n        scanner.Scan()\n        possuiQtd, _ := strconv.Atoi(scanner.Text())\n\n        frequencia :=  make(map[int]int)\n        var repetidas []string\n\n        for i := 0; i< possuiQtd; i++ {\n            scanner.Scan()\n            fig, _ := strconv.Atoi(scanner.Text())\n            frequencia[fig]++\n\n            if frequencia[fig] > 1 {\n                repetidas = append(repetidas, strconv.Itoa(fig))\n            }\n        }\n        var faltando []string\n        for i := 1; i <= totalAlbum; i++ {\n            if frequencia[i] == 0 {\n                faltando = append(faltando, strconv.Itoa(i))\n            }\n        }\n\n        imprimirResultado(repetidas)\n        imprimirResultado(faltando)\n\n    }\n}\n\nfunc imprimirResultado(lista []string) {\n    if len(lista) == 0 {\n        fmt.Println(\"[ ]\")\n    } else {\n        fmt.Printf(\"[ %s ]\\n\", strings.Join(lista, \" \"))\n    }\n}\n",
+            "lines": "51"
+        }
+    ]
+}

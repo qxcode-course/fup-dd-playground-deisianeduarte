@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_21-17-09",
+            "content": "@@ -17,852 +17,59 @@\n ort \n-(%0A        %22fmt%22%0A        %22io%22%0A        %22strconv%22%0A        %22strings%22%0A)%0A%0Afunc main() %7B%0A    var n int%0A    for %7B%0A        _, err := fmt.Scan(&n)%0A        if err == io.EOF %7B%0A            break%0A        %7D%0A        if err != nil %7B%0A            continue%0A        %7D%0A%0A        cartasFormatadas := make(%5B%5Dstring, n)%0A%0A        for i := 0; i %3C n; i++ %7B%0A            var valor int%0A            fmt.Scan(&valor)%0A%0A            switch valor %7B%0A            case 1:%0A                cartasFormatadas%5Bi%5D = %22A%22%0A            case 11:%0A                cartasFormatadas%5Bi%5D = %22j%22%0A            case 12:%0A                cartasFormatadas%5Bi%5D = %22Q%22%0A            case 13:%0A                cartasFormatadas%5Bi%5D = %22K%22%0A            default:%0A                cartasFormatadas%5Bi%5D = strconv.Itoa(valor)        %0A            %7D%0A        %7D%0A        fmt.Printf(%22%5B%25s%5D%5Cn%22, strings.Join(cartasFormatadas, %22, %22))%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_21-30-05",
+            "content": "@@ -109,21 +109,16 @@\n r n int%0A\n-    %0A\n     for \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-28_21-32-14",
+            "content": "@@ -19,24 +19,8 @@\n t (%0A\n-        %22bufio%22%0A\n     \n@@ -38,18 +38,18 @@\n        %22\n+i\n o\n-s\n %22%0A      \n@@ -103,219 +103,62 @@\n     \n-scanner := bufio.NewScanner(os.Stdin)%0A%0A    for scanner.Scan() %7B%0A        linhaN := strings.TrimSpace(scanner.Text())%0A        if linhaN == %22%22 %7B%0A            continue%0A        %7D%0A%0A        n, err := strconv.Atoi(linhaN\n+var n int%0A    %0A    for %7B%0A        _, err := fmt.Scan(&n\n )%0A  \n@@ -174,14 +174,17 @@\n err \n-!= nil\n+== io.EOF\n  %7B%0A \n@@ -190,32 +190,29 @@\n             \n-continue\n+break\n %0A        %7D%0A%0A\n@@ -210,17 +210,16 @@\n       %7D%0A\n-%0A\n         \n@@ -225,59 +225,33 @@\n  if \n-n\n+err\n  != \n-0 %7B%0A            fmt.Println(%22%5B%5D%22)%0A\n+nil %7B%0A     \n        \n-     \n cont\n@@ -268,169 +268,8 @@\n    %7D\n-%0A        if !scanner.Scan() %7B%0A            break%0A        %7D%0A        linhaCartas := strings.TrimSpace(scanner.Text())%0A%0A        campos := strings.Fields(linhaCartas)\n %0A%0A  \n@@ -342,27 +342,8 @@\n  %3C n\n- && i %3C len(campos)\n ; i+\n@@ -364,40 +364,47 @@\n   va\n-lor, _ := strconv.Atoi(campos%5Bi%5D\n+r valor int%0A            fmt.Scan(&valor\n )%0A%0A \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-28_21-45-20",
+            "content": "@@ -1112,25 +1112,36 @@\n as%5Bi%5D = \n-campos%5Bi%5D\n+strconv.Itoa(valor) \n        %0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-28_21-46-22",
+            "content": "package main\nimport (\n        \"bufio\"\n        \"fmt\"\n        \"os\"\n        \"strconv\"\n        \"strings\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\n    for scanner.Scan() {\n        linhaN := strings.TrimSpace(scanner.Text())\n        if linhaN == \"\" {\n            continue\n        }\n\n        n, err := strconv.Atoi(linhaN)\n        if err != nil {\n            continue\n        }\n\n        if n != 0 {\n            fmt.Println(\"[]\")\n            continue\n        }\n        if !scanner.Scan() {\n            break\n        }\n        linhaCartas := strings.TrimSpace(scanner.Text())\n\n        campos := strings.Fields(linhaCartas)\n\n        cartasFormatadas := make([]string, n)\n\n        for i := 0; i < n && i < len(campos); i++ {\n            valor, _ := strconv.Atoi(campos[i])\n\n            switch valor {\n            case 1:\n                cartasFormatadas[i] = \"A\"\n            case 11:\n                cartasFormatadas[i] = \"j\"\n            case 12:\n                cartasFormatadas[i] = \"Q\"\n            case 13:\n                cartasFormatadas[i] = \"K\"\n            default:\n                cartasFormatadas[i] = campos[i]       \n            }\n        }\n        fmt.Printf(\"[%s]\\n\", strings.Join(cartasFormatadas, \", \"))\n    }\n}\n",
+            "lines": "55"
+        }
+    ]
+}

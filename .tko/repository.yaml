@@ -19,12 +19,12 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@if2
-- fup@for2
-- fup@for1
-- fup@base
 - fup@list
+- fup@for1
+- fup@for2
+- fup@if2
 - fup@mat
+- fup@base
 - fup@if1
 flags:
   inbox: all
@@ -35,5 +35,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@copos
-selected_index: 88
+selected: fup@cartas
+selected_index: 105

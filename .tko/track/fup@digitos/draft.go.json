@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_20-07-23",
+            "content": "@@ -17,57 +17,13 @@\n ort \n-(%0A        %22fmt%22%0A        %22io%22%0A        %22strings%22%0A)%0A\n+%22fmt%22\n %0Afun\n@@ -28,17 +28,16 @@\n unc main\n- \n () %7B%0A   \n@@ -41,216 +41,35 @@\n     \n-var a, b string%0A%0A    for %7B%0A        _, err := fmt.Scan(&a, &b)%0A        if err == io.EOF %7B%0A            continue%0A        %7D%0A%0A        quantidade := strings.Count(b, a)%0A%0A        fmt.Println(quantidade)%0A       %0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_20-13-39",
+            "content": "@@ -91,23 +91,9 @@\n ar a\n- string%0A    var\n+,\n  b s\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-28_20-14-21",
+            "content": "@@ -189,60 +189,8 @@\n F %7B%0A\n-            break%0A        %7D%0A        if err != nil %7B%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-28_20-15-15",
+            "content": "package main\nimport (\n        \"fmt\"\n        \"io\"\n        \"strings\"\n)\n\nfunc main () {\n    var a string\n    var b string\n\n    for {\n        _, err := fmt.Scan(&a, &b)\n        if err == io.EOF {\n            break\n        }\n        if err != nil {\n            continue\n        }\n\n        quantidade := strings.Count(b, a)\n\n        fmt.Println(quantidade)\n       \n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

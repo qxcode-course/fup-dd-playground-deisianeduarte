@@ -36,3 +36,4 @@
 2026-06-27 16:15:45, MOVE, v:1, k:fup@copos, mode:PICK
 2026-06-27 16:15:46, EXEC, v:1, k:fup@copos, mode:FULL, rate:0, size:5
 2026-06-27 16:15:50, EXEC, v:1, k:fup@copos, mode:FULL, rate:0
+2026-06-27 16:15:50, MOVE, v:1, k:fup@copos, mode:EDIT

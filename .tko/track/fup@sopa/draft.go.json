@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_19-47-34",
+            "content": "@@ -10,560 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A        %22fmt%22%0A        %22bufio%22%0A        %22os%22%0A        %22strconv%22%0A)%0A%0Afunc fibonacci(n int) uint64 %7B%0A    if n == 0 %7B%0A        return 0 %0A    %7D%0A    if n == 1 %7C%7C n == 2 %7B%0A        return 1 %0A    %7D%0A%0A    var a, b uint64 = 1, 1%0A    for i := 3; i %3C= n; i++ %7B%0A            a, b, = b, a+b%0A    %7D%0A    return b%0A%0A%7D%0A%0Afunc main() %7B%0A    scanner : bufio.NewScanner(os.Stdin)%0A%0A    for scanner.Scan() %7B%0A        linha := scanner.Text()%0A        if linha == %22%22 %7B%0A            continue%0A        %7D%0A%0A        n, _ := strconv.Atoi(linha)%0A        fmt.Println(fibonacci(n))%0A    %7D%0A    \n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_20-01-23",
+            "content": "@@ -275,16 +275,17 @@\n     a, b\n+,\n  = b, a+\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-28_20-01-48",
+            "content": "@@ -335,17 +335,16 @@\n canner :\n-=\n  bufio.N\n@@ -392,17 +392,9 @@\n () %7B\n-    %0A    \n+%0A\n     \n@@ -421,20 +421,16 @@\n .Text()%0A\n-    \n         \n@@ -458,20 +458,16 @@\n         \n-    \n continue\n@@ -478,20 +478,16 @@\n      %7D%0A%0A\n-    \n         \n@@ -514,20 +514,16 @@\n (linha)%0A\n-    \n         \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-28_20-04-48",
+            "content": "package main\n\nimport (\n        \"fmt\"\n        \"bufio\"\n        \"os\"\n        \"strconv\"\n)\n\nfunc fibonacci(n int) uint64 {\n    if n == 0 {\n        return 0 \n    }\n    if n == 1 || n == 2 {\n        return 1 \n    }\n\n    var a, b uint64 = 1, 1\n    for i := 3; i <= n; i++ {\n            a, b = b, a+b\n    }\n    return b\n\n}\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\n    for scanner.Scan() {    \n            linha := scanner.Text()\n            if linha == \"\" {\n                continue\n        }\n\n            n, _ := strconv.Atoi(linha)\n            fmt.Println(fibonacci(n))\n    }\n    \n}\n",
+            "lines": "39"
+        }
+    ]
+}
