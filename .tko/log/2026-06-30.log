@@ -1,0 +1,59 @@
+2026-06-30 11:54:34, MOVE, v:1, k:fup@cartas, mode:PICK
+2026-06-30 11:54:36, EXEC, v:1, k:fup@cartas, mode:FULL, rate:0
+2026-06-30 11:54:38, EXEC, v:1, k:fup@cartas, mode:FULL, rate:0
+2026-06-30 11:54:38, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-06-30 12:07:22, EXEC, v:1, k:fup@cartas, mode:FULL, rate:60, size:55
+2026-06-30 12:07:56, EXEC, v:1, k:fup@cartas, mode:FULL, rate:100, size:55
+2026-06-30 12:08:00, MOVE, v:1, k:fup@cartas, mode:BACK
+2026-06-30 12:08:35, SELF, v:1, k:fup@cartas, self:1, rate:100, concept:1
+2026-06-30 12:08:45, MOVE, v:1, k:fup@invertendo, mode:DOWN
+2026-06-30 12:08:49, MOVE, v:1, k:fup@invertendo, mode:PICK
+2026-06-30 12:08:51, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:5
+2026-06-30 12:07:44, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-06-30 12:07:55, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-06-30 12:08:45, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:08:45, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:08:51, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:12:31, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:19:24, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:24:23, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-06-30 12:26:22, EXEC, v:1, k:fup@invertendo, mode:FULL, size:31, fail:COMP
+2026-06-30 12:26:48, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:100, size:31
+2026-06-30 12:26:53, MOVE, v:1, k:fup@invertendo, mode:BACK
+2026-06-30 12:27:05, SELF, v:1, k:fup@invertendo, self:1, rate:100, concept:1
+2026-06-30 12:27:26, MOVE, v:1, k:fup@fila, mode:DOWN
+2026-06-30 12:27:33, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-30 12:27:35, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:5
+2026-06-30 12:27:53, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-30 12:27:56, EXEC, v:1, k:fup@fila, mode:FULL, rate:0
+2026-06-30 12:27:56, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:32:48, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:37:26, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:42:50, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:47:19, EXEC, v:1, k:fup@fila, mode:FULL, size:39, fail:COMP
+2026-06-30 12:47:18, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:48:28, EXEC, v:1, k:fup@fila, mode:FULL, rate:100, size:39
+2026-06-30 12:48:30, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-30 12:48:39, SELF, v:1, k:fup@fila, self:1, rate:100, concept:1
+2026-06-30 12:48:44, MOVE, v:1, k:fup@casais, mode:DOWN
+2026-06-30 12:48:53, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-30 12:49:05, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-30 12:49:06, EXEC, v:1, k:fup@fila, mode:FULL, rate:100
+2026-06-30 12:49:08, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-30 12:49:12, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-30 12:49:14, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:5
+2026-06-30 12:49:06, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-30 12:49:14, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-30 12:53:55, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-30 12:57:31, EXEC, v:1, k:fup@casais, mode:FULL, size:31, fail:COMP
+2026-06-30 12:58:30, EXEC, v:1, k:fup@casais, mode:FULL, rate:100, size:32
+2026-06-30 12:58:33, EXEC, v:1, k:fup@casais, mode:FULL, rate:100
+2026-06-30 12:58:35, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-30 12:58:43, SELF, v:1, k:fup@casais, self:1, rate:100, concept:1
+2026-06-30 12:58:49, MOVE, v:1, k:fup@exemplares, mode:DOWN
+2026-06-30 12:58:51, MOVE, v:1, k:fup@exemplares, mode:PICK
+2026-06-30 12:59:03, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-30 12:59:05, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-30 12:59:07, MOVE, v:1, k:fup@exemplares, mode:PICK
+2026-06-30 12:59:10, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:5
+2026-06-30 13:02:35, MOVE, v:1, k:fup@exemplares, mode:BACK

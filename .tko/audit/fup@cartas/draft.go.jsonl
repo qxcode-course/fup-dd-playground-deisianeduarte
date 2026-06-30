@@ -43,3 +43,5 @@
 {"ts":1782683095,"hash":"265acd86570a9f1d3139d7104d0cdc91bda3f0a7c3b89703abb52b0a34cfe957","mode":"diff","ops":[{"tag":"replace","a1":37,"a2":38,"text":"            valor, _ := strconv.Atoi(campos[i])\n            \n"}]}
 {"ts":1782683117,"hash":"934f38c25215df83f48f6e9e1f5bf729a2bdf4ec0f41645d2c2fe4f4497d26c4","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"        \"os\"\n"},{"tag":"delete","a1":38,"a2":39,"text":""}]}
 {"ts":1782683173,"hash":"16d3f9478dd77f8f76882e4a954827b2af79230e1840440dfbaca84097fee4b4","mode":"diff","ops":[{"tag":"replace","a1":49,"a2":50,"text":"                cartasFormatadas[i] = campos[i]       \n"}]}
+{"ts":1782821226,"hash":"711dbc3a5484299a61dc7f829477ef80466338607e75a0fbf490a7a2c188b1ce","mode":"diff","ops":[{"tag":"replace","a1":23,"a2":24,"text":"        if n == 0 {\n"}]}
+{"ts":1782821264,"hash":"4330e720600a5f9afac1d6f383238deace01e9f93a078baf1eb18f5a10dfebb3","mode":"diff","ops":[{"tag":"replace","a1":43,"a2":44,"text":"                cartasFormatadas[i] = \"J\"\n"}]}

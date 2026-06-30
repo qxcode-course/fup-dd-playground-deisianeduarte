@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_12-49-14",
+            "content": "@@ -17,640 +17,59 @@\n ort \n-(%0A        %22fmt%22%0A        %22bufio%22%0A        %22os%22%0A        %22strconv%22%0A)%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Split(bufio.ScanWords)%0A%0A    for scanner.Scan() %7B%0A        n, _ := strconv.Atoi(scanner.Text())%0A        esperando := make(map%5Bint%5Dint)%0A        casais := 0%0A%0A        for i := 0; i %3C n; i++ %7B%0A            scanner.Scan()%0A            animal, _ := strconv.Atoi(scanner.Text())%0A            parOposto := animal * -1%0A%0A            if esperando%5BparOposto%5D %3E 0 %7B%0A                casais ++%0A                esperando%5BparOposto%5D--%0A            %7D else %7B%0A                esperando%5Banimal%5D++%0A            %7D%0A        %7D%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_12-57-31",
+            "content": "@@ -645,36 +645,8 @@\n   %7D%0A\n-        fmt.Println(casais)%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_12-58-30",
+            "content": "package main\nimport (\n        \"fmt\"\n        \"bufio\"\n        \"os\"\n        \"strconv\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Split(bufio.ScanWords)\n\n    for scanner.Scan() {\n        n, _ := strconv.Atoi(scanner.Text())\n        esperando := make(map[int]int)\n        casais := 0\n\n        for i := 0; i < n; i++ {\n            scanner.Scan()\n            animal, _ := strconv.Atoi(scanner.Text())\n            parOposto := animal * -1\n\n            if esperando[parOposto] > 0 {\n                casais ++\n                esperando[parOposto]--\n            } else {\n                esperando[animal]++\n            }\n        }\n        fmt.Println(casais)\n    }\n}\n",
+            "lines": "32"
+        }
+    ]
+}

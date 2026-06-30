@@ -21,7 +21,7 @@ func main() {
             continue
         }
 
-        if n != 0 {
+        if n == 0 {
             fmt.Println("[]")
             continue
         }
@@ -41,7 +41,7 @@ func main() {
             case 1:
                 cartasFormatadas[i] = "A"
             case 11:
-                cartasFormatadas[i] = "j"
+                cartasFormatadas[i] = "J"
             case 12:
                 cartasFormatadas[i] = "Q"
             case 13:

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_12-08-51",
+            "content": "@@ -17,711 +17,59 @@\n ort \n-(%0A        %22fmt%22%0A        %22bufio%22%0A        %22os%22%0A        %22strconv%22%0A        %22strings%22%0A)%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Split(bufio.ScanWords)%0A%0A    for scanner.Scan() %7B%0A        n, _ := strconv.Atoi(scanner.Text())%0A        elementos := make(%5B%5Dstring, n)%0A        for i := 0; i %3C n; i++ %7B%0A            scanner.Scan()%0A            elementos%5Bi%5D = scanner.Text()%0A        %7D%0A        for i, j := 0, len(elementos)-1; i %3C j; i, j = i+1, j - 1 %7B%0A            elementos%5Bi%5D, elementos%5Bj%5D = elementos%5Bj%5D, elementos%5Bi%5D%0A        %7D%0A        if len(elementos) == 0 %7B%0A            fmt.Println(%22%5B %5D%22)%0A        %7D else %7B%0A            fmt.Printf(%22%5B %25s %5D%5Cn%22, string.Join(elementos, %22 %22))%0A        %7D%0A    %7D%0A\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_12-26-22",
+            "content": "@@ -678,17 +678,16 @@\n , string\n-s\n .Join(el\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_12-26-48",
+            "content": "package main\nimport (\n        \"fmt\"\n        \"bufio\"\n        \"os\"\n        \"strconv\"\n        \"strings\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Split(bufio.ScanWords)\n\n    for scanner.Scan() {\n        n, _ := strconv.Atoi(scanner.Text())\n        elementos := make([]string, n)\n        for i := 0; i < n; i++ {\n            scanner.Scan()\n            elementos[i] = scanner.Text()\n        }\n        for i, j := 0, len(elementos)-1; i < j; i, j = i+1, j - 1 {\n            elementos[i], elementos[j] = elementos[j], elementos[i]\n        }\n        if len(elementos) == 0 {\n            fmt.Println(\"[ ]\")\n        } else {\n            fmt.Printf(\"[ %s ]\\n\", strings.Join(elementos, \" \"))\n        }\n    }\n\n}\n",
+            "lines": "31"
+        }
+    ]
+}
